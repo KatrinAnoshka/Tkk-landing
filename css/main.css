@@ -1,0 +1,102 @@
+body {
+	font-family: sans-serif;
+	font-size: 1em;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	font-family: "RobotoRegular", sans-serif;
+	overflow-x: hidden;
+	max-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+section {
+	width: 1175px;
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Pop-up-form */
+
+.hidden {
+	display: none;
+}
+
+form {
+    background-color: #F7F7F7;
+    padding: 25px 30px;
+    border: #79b433 5px solid;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+form input {
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    border: #D9D9D9 1px solid;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.06) inset;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.06) inset;
+    width: 100%;
+    text-indent: 10px;
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+form .button_wrap {
+    text-align: center;
+    margin: 30px 0 10px;
+}
+
+.button.btn-green {
+    background-color: #79b433;
+    color: #fff;
+    outline: none;
+    font-size: 15px;
+    padding: 8px 10px;
+}
+
+#form_back {
+    max-width: 420px;
+    margin: auto;
+    position: relative;
+}
+
+#form_back h2 {
+    text-align: center;
+    font-weight: normal;
+}
+
+#form_back p {
+    text-align: center;
+}
