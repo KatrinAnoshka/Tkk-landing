@@ -15,7 +15,7 @@
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -25,7 +25,104 @@
 
 <body>
 
-	<!-- Здесь пишем код -->
+	<div class="page">
+		
+		<!--********** Header-menu **********-->
+
+		<header class="header">
+
+			<a href="/" class="logo">
+				<img src="img/logo.png" alt="Логотип Таргет Консалт Компани" class="logo__img">
+				<span class="logo__text">Таргет Консалт Компани</span>
+			</a>
+
+			<a href="#" class="menu__icon">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+					
+			<nav class="menu">
+				<ul class="menu__links">
+					<li class="menu__links-item"><a href="#calculator">Калькулятор</a></li>
+					<li class="menu__links-item"><a href="#portfolio">Портфолио</a></li>
+					<li class="menu__links-item"><a href="#price">Цены</a></li>
+					<li class="menu__links-item"><a href="#time">Сроки</a></li>
+					<li class="menu__links-item"><a href="#offers">Предложение</a></li>
+					<li class="menu__links-item"><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+
+			<div class="phone__wrap">
+				<a href="tel:74994040099" class="phone">+7(499)404-00-99</a>
+				<a href="#" class="button phone__button">Заказать звонок</a>
+			</div>
+
+		</header>
+
+		<!--********** About-section **********-->
+
+		<section class="about">
+			
+			<div class="about__wrap">
+				<div class="about__description">
+					<h1 class="about__title">Разработаем уникальный сайт</h1>
+					<p class="about__text">Идейные соображения высшего порядка, а также постоянный качественный рост сферы нашей активности в значительной степени обуславливает создание динамичных форм развития нашей деятельности.</p>
+					<a href="#" class="button about__button">Узнать больше</a>
+				</div>
+				<img src="img/about.png" alt="Ноутбук с телефоном" class="about__img">
+			</div>
+		</section>
+
+		<!--********** Conversion-section **********-->
+
+		<section class="conversion">
+			
+			<h2 class="section__title conversion__title">Калькулятор конверсий</h2>
+
+			<div class="conversion__wrap">
+				<div class="conversion__data">
+					<h3 class="conversion__subtitle">Введите данные</h3>
+					<div class="conversion__block conversion__data-block">
+						<div class="range__wrap">
+							<div class="range__date">
+								<p class="range__text">Кол-во посетителей сайта за сутки</p>
+							  	<input class="range" type="range" min="0" max="2000" value="10" step="1" onmousemove="rangevalue1.value=value" />
+							</div> 	
+						  	<output id="rangevalue1"></output>
+						</div>
+						<div class="range__wrap">
+							<p class="range__text">Кол-во посетителей сайта за сутки</p>
+						  	<input class="range" type="range" min="0" max="2000" value="10" step="1" onmousemove="rangevalue2.value=value" />
+						  	<output id="rangevalue2"></output>
+						</div> 
+						<div class="range__wrap">
+							<p class="range__text">Кол-во посетителей сайта за сутки</p>
+						  	<input class="range" type="range" min="0" max="2000" value="10" step="1" onmousemove="rangevalue3.value=value" />
+						  	<output id="rangevalue3"></output>
+						</div> 
+						<div class="range__wrap">
+							<p class="range__text">Кол-во посетителей сайта за сутки</p>
+						  	<input class="range" type="range" min="0" max="2000" value="10" step="1" onmousemove="rangevalue4.value=value" />
+						  	<output id="rangevalue4"></output>
+						</div>   	
+					</div>
+				</div>
+
+				<div class="conversion__result">
+					<h3 class="conversion__subtitle">Вы получите</h3>
+					<div class="conversion__block conversion__result-block">
+						<div class="range__wrap">
+						  	<input class="range" type="range" min="0" max="2000" value="10" step="1" onmousemove="rangevalue5.value=value" />
+						  	<output id="rangevalue5"></output>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div> <!-- end of Page -->
 
 
 	

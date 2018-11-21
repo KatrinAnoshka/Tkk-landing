@@ -29,36 +29,7 @@ $(document).ready(function() {
 		});
 	}
 
-	/* Changed height on click (Spoiler) */
-
-	$(".lawyers__read-more").click(function() {
-		$(this).siblings(".lawyers__descr-wrap").toggleClass("open");
-
-		if($(".lawyers__descr-wrap").hasClass("open")){
-            $(this).closest(".lawyers__read-more").text("Скрыть");
-        }
-        else{
-            $(this).closest(".lawyers__read-more").text("Читать полностью");
-        }	
-	});
-
-	$(".review__button").click(function() {
-		$(this).siblings(".audio__item").toggleClass("open");
-
-		if($(".audio__item").hasClass("open")){
-            $(this).closest(".review__button").text("Скрыть");
-        }
-        else{
-            $(this).closest(".review__button").text("Слушать все отзывы");
-        }	
-	});
 	
-	/* Section-Doubts (Spoiler) */
-
-	$(".doubts__item").click(function() {
-		$(this).toggleClass("open-doubts");
-	});
-
 	/* Pop-up forms */
 
 	$("a.fancy").fancybox();
@@ -71,39 +42,7 @@ $(document).ready(function() {
 		mainClass: 'mfp-forms'
 	});
 
-	/* Tabs switches */
-
-	$(".tab_item").not(":first").hide();
-	$(".tabs-wrapper .tab").click(function() {
-		$(".tabs-wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
-		$(".tab_item").hide().eq($(this).index()).fadeIn()
-	}).eq(0).addClass("active");
-
-
-	/* Audio */
-
-	$('audio').mediaelementplayer({
-		features: ['playpause','progress','current','tracks','fullscreen'],
-		audioWidth: 465,
-         audioHeight: 50
-	});
-
-    /* Animation */
 	
-	new WOW().init();
-
-	/* Chrome Smooth Scroll */ 
-
-	try {
-		$.browserSelector();
-		if($("html").hasClass("chrome")) {
-			$.smoothScroll();
-		}
-	} catch(err) {
-	};
-
-	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
-
 	/* Fixed menu */
 
 	if ($(window).width() > 992)   {
@@ -120,19 +59,7 @@ $(document).ready(function() {
 		});
 	}
 
-	/* Equal height of blocks */
-
-	var heightMax = 0;
-		$('.slide__descr').each(function(i,elem) {
-			var height = $(elem).outerHeight();
-			console.log(height);
-			if (heightMax<height)
-				heightMax = height;
-		});
-	  $('.slide__descr').css({'height': heightMax + 'px'});
-
-});
-
+	
 	/* Flexslider */
    	
 $(window).load(function(){
