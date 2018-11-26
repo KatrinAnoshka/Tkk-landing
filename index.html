@@ -16,7 +16,8 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+	
+	<link rel="stylesheet" href="libs/flexslider/flexslider.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -93,32 +94,71 @@
 						  	<output id="rangevalue1"></output>
 						</div>
 						<div class="range__wrap">
-							<p class="range__text">Кол-во посетителей сайта за сутки</p>
-						  	<input class="range" type="range" min="0" max="2000" value="10" step="1" onmousemove="rangevalue2.value=value" />
+							<div class="range__date">
+								<p class="range__text">Кол-во посетителей сайта за сутки</p>
+							  	<input class="range" type="range" min="0" max="80" value="10" step="1" onmousemove="rangevalue2.value=value" />
+							</div> 	
 						  	<output id="rangevalue2"></output>
-						</div> 
+						</div>
 						<div class="range__wrap">
-							<p class="range__text">Кол-во посетителей сайта за сутки</p>
-						  	<input class="range" type="range" min="0" max="2000" value="10" step="1" onmousemove="rangevalue3.value=value" />
+							<div class="range__date">
+								<p class="range__text">Кол-во посетителей сайта за сутки</p>
+							  	<input class="range" type="range" min="0" max="100" value="10" step="1" onmousemove="rangevalue3.value=value" />
+							</div> 	
 						  	<output id="rangevalue3"></output>
-						</div> 
+						</div>
 						<div class="range__wrap">
-							<p class="range__text">Кол-во посетителей сайта за сутки</p>
-						  	<input class="range" type="range" min="0" max="2000" value="10" step="1" onmousemove="rangevalue4.value=value" />
+							<div class="range__date">
+								<p class="range__text">Кол-во посетителей сайта за сутки</p>
+							  	<input class="range" type="range" min="0" max="10" value="10" step="1" onmousemove="rangevalue4.value=value" />
+							</div> 	
 						  	<output id="rangevalue4"></output>
-						</div>   	
+						</div>	
 					</div>
 				</div>
 
 				<div class="conversion__result">
 					<h3 class="conversion__subtitle">Вы получите</h3>
 					<div class="conversion__block conversion__result-block">
-						<div class="range__wrap">
-						  	<input class="range" type="range" min="0" max="2000" value="10" step="1" onmousemove="rangevalue5.value=value" />
-						  	<output id="rangevalue5"></output>
+						<div class="range__wrap range__wrap-result">
+						  	<p class="range__text range__text-result">Заявок в месяц (30 дней)</p>
+						  	<output class="result__output"></output>
 						</div> 
+						<div class="range__wrap range__wrap-result">
+						  	<p class="range__text range__text-result">Кол-во продаж в месяц</p>
+						  	<output class="result__output"></output>
+						</div>
+						<div class="range__wrap range__wrap-result">
+						  	<p class="range__text range__text-result">Прибыль за 1 месяц</p>
+						  	<output class="result__output">125</output>
+						</div>
+						<div class="range__wrap range__wrap-result">
+						  	<p class="range__text range__text-result">Прибыль за год</p>
+						  	<output class="result__output">22</output>
+						</div>
 					</div>
 				</div>
+			</div>
+		</section>
+
+		<!--************ Projects-section ************-->
+
+		<section class="projects">
+			<h2 class="projects__title section__title">Наши работы</h2>
+
+			
+			
+		</section>
+
+		<!--************* Price-section *************-->
+
+		<section class="price">
+			<h2 class="price__title section__title">Калькулятор стоимости</h2>
+
+			<div class="price__wrap">
+				<progress ID="Progress1" value="0" max="100"></progress>
+				<br>
+				<Button ID="Button1" onclick="myFunction()">Click Me</Button>
 			</div>
 		</section>
 
@@ -157,7 +197,7 @@
 	<![endif]-->
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	
+	<script src="libs//flexslider/jquery.flexslider.js"></script>
 	<script src="js/common.js"></script>
 	
 </body>
