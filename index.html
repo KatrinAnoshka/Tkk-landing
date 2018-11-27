@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+<<html lang="ru"> 
 
 <head>
 
@@ -17,10 +14,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	
+	<link rel="stylesheet" href="libs/jquery/jquery-ui.css">
 	<link rel="stylesheet" href="libs/flexslider/flexslider.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
+
+	<script src="libs/jquery/jquery.min.js"></script>
+  	<script src="libs/jquery/jquery-ui.min.js"></script>
 
 </head>
 
@@ -88,12 +89,15 @@
 					<div class="conversion__block conversion__data-block">
 						<div class="range__wrap">
 							<div class="range__date">
-								<p class="range__text">Кол-во посетителей сайта за сутки</p>
-							  	<input class="range" type="range" min="0" max="2000" value="10" step="1" onmousemove="rangevalue1.value=value" />
+							  	
+									<label class="range__text" for="amount">Кол-во посетителей сайта за сутки</label>
+									
+								
+								<div id="slider-range-max"></div>
 							</div> 	
-						  	<output id="rangevalue1"></output>
+						  	<input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
 						</div>
-						<div class="range__wrap">
+						<!-- <div class="range__wrap">
 							<div class="range__date">
 								<p class="range__text">Кол-во посетителей сайта за сутки</p>
 							  	<input class="range" type="range" min="0" max="80" value="10" step="1" onmousemove="rangevalue2.value=value" />
@@ -113,7 +117,7 @@
 							  	<input class="range" type="range" min="0" max="10" value="10" step="1" onmousemove="rangevalue4.value=value" />
 							</div> 	
 						  	<output id="rangevalue4"></output>
-						</div>	
+						</div>	 -->
 					</div>
 				</div>
 
@@ -188,15 +192,22 @@
 
         </form>
     </div>
-
-	<!--[if lt IE 9]>
-	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script>
-	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-	<script src="libs/respond/respond.min.js"></script>
-	<![endif]-->
-
-	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	
+	<script>
+  $(function() {
+    $( "#slider-range-max" ).slider({
+      range: "max",
+      min: 1,
+      max: 10,
+      value: 2,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( ui.value );
+      }
+    });
+    $( "#amount" ).val( $( "#slider-range-max" ).slider( "value" ) );
+  });
+  </script>
+	
 	<script src="libs//flexslider/jquery.flexslider.js"></script>
 	<script src="js/common.js"></script>
 	

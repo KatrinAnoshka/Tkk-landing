@@ -365,9 +365,9 @@ h3.conversion__subtitle {
     line-height: 1.44;
     margin: 0 0 15px;
 }
-.range {
-  -webkit-appearance: none;
-  vertical-align: middle;
+.slider-range-max {
+  /*-webkit-appearance: none;*/
+  /*vertical-align: middle;*/
   outline: none;
   border: none;
   padding: 0;
@@ -479,6 +479,8 @@ output {
 .result__output {
     border: 3px solid #fccc22;
 }
+/*,,,,,,,,,,*/
+
 
 
 /*Price-section*/

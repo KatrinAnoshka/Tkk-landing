@@ -58,11 +58,7 @@ $(document).ready(function() {
 			}
 		});
 	}
-
-	myFunction= function() {
-	  document.getElementById("Progress1").value= document.getElementById("Progress1").value +5;
-	 $("#Button1").css('width', '500px');
-}
+ 
 
 });	
 	
