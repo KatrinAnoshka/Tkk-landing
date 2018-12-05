@@ -58,6 +58,54 @@ $(document).ready(function() {
 			}
 		});
 	}
+
+	// Quiz
+
+  $('.price__button').click(function(){
+    if ($(this).hasClass('first')){
+        $('#progress-bar').val('0');
+        $(this).nextAll().removeClass('progress__active');  
+       }else if ($(this).hasClass('second')){
+        $(this).nextAll().removeClass('progress__active');  
+        $('#progress-bar').val('34');
+        $(this).prevAll().addClass('progress__active');  
+        $(this).addClass('progress__active');
+       }else if ($(this).hasClass('third')){
+        $(this).nextAll().removeClass('progress__active');  
+        $('#progress-bar').val('67');
+        $(this).prevAll().addClass('progress__active'); 
+        $(this).addClass('progress__active');
+       } else{
+        $('#progress-bar').val('100');
+         $(this).addClass('progress__active');
+        $(this).prevAll().addClass('progress__active');
+       }
+  });
+
+/* Left-scroll */
+
+	$(window).scroll(function(event){
+		var body = $('body').scrollTop();
+		if (body == 0) {
+			var body = $('html').scrollTop();
+		}
+		var id = 'index';
+		$('section').each(function(i,elem) {
+		 	var top = $(elem).offset().top;
+		 	if (top < body+200)
+		 		id = $(elem).attr('id');
+		});
+		$('.scroll li').removeClass('active');
+		$('.scroll li a[href="#' + id + '"]').parent().addClass('active');
+
+	});
+	
+	$('.scroll a').click(function(e) {
+		e.preventDefault();
+		var topOffset = $($(this).attr('href')).offset().top-$('header').outerHeight();
+		$('html,body').animate({ scrollTop: topOffset }, 600);
+	});
+		
  
 
 });	
