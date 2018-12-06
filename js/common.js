@@ -59,6 +59,7 @@ $(document).ready(function() {
 		});
 	}
 
+	
 	// Quiz
 
   $('.price__button').click(function(){
@@ -106,7 +107,11 @@ $(document).ready(function() {
 		$('html,body').animate({ scrollTop: topOffset }, 600);
 	});
 		
- 
+ 	
+        
+    
+
+
 
 });	
 	

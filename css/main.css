@@ -701,6 +701,26 @@ a.price__button:hover {
 .time__item--cell-last {
     border-right: 1px solid rgba(152, 209, 224, 0.6);
 }
+.time__item--active {
+    position: relative;
+    width: 500%;
+}
+.time__item--inner {
+    position: absolute;
+    content: '';
+    top: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    transform: translate(0, -50%);
+    left: 0;
+    background-color: #a0b8e3;
+    width: calc(100% - 23px);
+    height: 27%;
+    border-bottom-left-radius: 100px 80px;
+    border-top-left-radius: 100px 80px;
+    border-bottom-right-radius: 100px 80px;
+    border-top-right-radius: 100px 80px;
+}
 
 /*********Offer-section*********/
 
