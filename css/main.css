@@ -670,6 +670,8 @@ a.price__button:hover {
     display: grid;
     grid-template-columns: 188px repeat(21, 1fr);
     margin: 0 auto;
+    position: relative;
+    z-index: 8;
 }
 .time__item--header {
     background-color: #33862f;
@@ -720,6 +722,8 @@ a.price__button:hover {
 }
 .offer__descr {
     width: 38%;
+    position: relative;
+    z-index: 8;
 }
 .offer__title {
 
@@ -737,6 +741,14 @@ a.price__button:hover {
   color: rgb(255, 255, 255);
   line-height: 1.5;
   text-align: justify;
+}
+.offer__img {
+    position: relative;
+
+}
+.offer__img img {
+    position: relative;
+    z-index: 8;
 }
 a.offer__button {
     font-size: 1.11em;
@@ -757,6 +769,157 @@ a.offer__button:hover {
     box-shadow: none;
 }
 
+/*Animation-triangle*/
+
+.triangle {
+    position: absolute;
+    z-index: 1;
+    margin: 80px;
+    width: 0;
+    height: 0;
+}
+
+#triangle-first {
+    filter: blur(7px);
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #f6cc17;
+
+    /*border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-right: 200px solid #f6cc17;*/
+    animation-name: move1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;   
+    top: 0;
+    right: 155%;
+}
+#triangle-second {
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 60px solid #f6cc17;
+    animation-name: move2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;   
+    bottom: 93%;
+    right: 55%;
+}
+#triangle-third {
+    filter: blur(1.5px);
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-right: 80px solid #f6cc17;
+    animation-name: move3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;   
+    top: 46%;
+    right: 94%;
+
+}
+/*svg {
+    filter: blur(7px);
+}*/
+#triangle-fourth {
+    filter: blur(2.5px);
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-right: 120px solid #f6cc17;
+    animation-name: move4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;   
+    top: 20%;
+    left: 80%;
+}
+#triangle-fifth {
+    filter: blur(0.5px);
+    border-top: 49px solid transparent;
+    border-bottom: 69px solid transparent;
+    border-right: 29px solid #f6cc17;
+    animation-name: move5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    top: 53%;
+    left: 78%;
+}
+@keyframes move1 {
+    0%  {
+        border-bottom: 200px solid #f6cc17;
+    }
+    50% {
+        border-bottom: 200px solid #532d61; 
+        right: 100%;
+        transform: rotate(180deg);
+    }
+    100% {
+        border-bottom: 200px solid #f6cc17; 
+        transform: rotate(360deg);
+    }
+}
+@keyframes move2 {
+    0%  {
+        border-right: 60px solid #f6cc17;
+    }
+    20% {
+        border-right: 60px solid #395aa0; 
+        right: 0;
+        transform: rotate(180deg);
+    }
+    100% {
+        border-right: 60px solid #f6cc17; 
+        transform: rotate(360deg);
+    }
+}
+@keyframes move3 {
+    0%  {
+        border-right: 80px solid #f6cc17;
+    }
+    50%  {
+        top: 80%;
+        right: 80%;
+        
+    
+        border-right: 80px solid #00a650; 
+       
+        transform: rotate(180deg);
+    }
+    100% {
+        border-right: 80px solid #3a5ba2;
+        transform: rotate(360deg);
+    }
+}
+@keyframes move4 {
+    0%  {
+        border-right: 120px solid #00a650;
+    }
+    50%  {
+        top: 10%;
+        left: 75%;
+        border-right: 120px solid #3a5ba2;       
+        transform: rotate(180deg);
+    }
+    100% {
+        border-right: 120px solid #00a650;
+        transform: rotate(360deg);
+    }
+}
+@keyframes move5 {
+    0%  {
+        border-right: 80px solid #00a650;
+    }
+    50%  {
+        top: 84%;
+        left: 35%;
+        
+    
+        border-right: 80px solid #3a5ba2; 
+       
+        transform: rotate(180deg);
+    }
+    100% {
+        border-right: 80px solid #3a5ba2;
+        transform: rotate(360deg);
+    }
+}
 /*Contacts-section*/
 
 .contacts__wrap {
