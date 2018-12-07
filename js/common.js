@@ -28,8 +28,18 @@ $(document).ready(function() {
 			}
 		});
 	}
-
 	
+	// Grid-section
+
+	$(".time__wrap .time__item--active200")
+		.append('<div class="time__item--inner" style="width: calc(200% - 17px);"></div>');
+
+	$(".time__wrap .time__item--active500")
+		.append('<div class="time__item--inner" style="width: calc(500% - 17px);"></div>');	
+	
+	$(".time__wrap .time__item--active700")
+		.append('<div class="time__item--inner" style="width: calc(700% - 17px);"></div>');
+
 	/* Pop-up forms */
 
 	$("a.fancy").fancybox();

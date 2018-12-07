@@ -348,7 +348,7 @@ h3.conversion__subtitle--res {
     position: absolute;
     left: -44px;
     padding-bottom: 40px;
-    padding-top: 14px;
+    padding-top: 15px;
 }
 .ui-slider-horizontal .ui-slider-range-max {
     background-color: #7bc6db;
@@ -697,14 +697,12 @@ a.price__button:hover {
 .time__item--cell {
     border-left: 1px solid rgba(152, 209, 224, 0.6);
     border-bottom: 1px solid rgba(152, 209, 224, 0.6);
+    position: relative;
 }
 .time__item--cell-last {
     border-right: 1px solid rgba(152, 209, 224, 0.6);
 }
-.time__item--active {
-    position: relative;
-    width: 500%;
-}
+
 .time__item--inner {
     position: absolute;
     content: '';
@@ -714,7 +712,7 @@ a.price__button:hover {
     transform: translate(0, -50%);
     left: 0;
     background-color: #a0b8e3;
-    width: calc(100% - 23px);
+    z-index: 25;
     height: 27%;
     border-bottom-left-radius: 100px 80px;
     border-top-left-radius: 100px 80px;
@@ -801,70 +799,23 @@ a.offer__button:hover {
 
 #triangle-first {
     filter: blur(7px);
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
+    border: 100px solid transparent;
     border-bottom: 200px solid #f6cc17;
-
-    /*border-top: 100px solid transparent;
-    border-bottom: 100px solid transparent;
-    border-right: 200px solid #f6cc17;*/
     animation-name: move1;
     animation-duration: 4s;
     animation-iteration-count: infinite;   
     top: 0;
     right: 155%;
 }
-#triangle-second {
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    border-right: 60px solid #f6cc17;
-    animation-name: move2;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;   
-    bottom: 93%;
-    right: 55%;
-}
-#triangle-third {
-    filter: blur(1.5px);
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-    border-right: 80px solid #f6cc17;
-    animation-name: move3;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;   
-    top: 46%;
-    right: 94%;
-
-}
-/*svg {
-    filter: blur(7px);
-}*/
-#triangle-fourth {
-    filter: blur(2.5px);
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    border-right: 120px solid #f6cc17;
-    animation-name: move4;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;   
-    top: 20%;
-    left: 80%;
-}
-#triangle-fifth {
-    filter: blur(0.5px);
-    border-top: 49px solid transparent;
-    border-bottom: 69px solid transparent;
-    border-right: 29px solid #f6cc17;
-    animation-name: move5;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    top: 53%;
-    left: 78%;
+#triangle-first:after{
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 250px;
+    top: -25px;
+    left: -125px;
 }
 @keyframes move1 {
-    0%  {
-        border-bottom: 200px solid #f6cc17;
-    }
     50% {
         border-bottom: 200px solid #532d61; 
         right: 100%;
@@ -875,13 +826,19 @@ a.offer__button:hover {
         transform: rotate(360deg);
     }
 }
+#triangle-second {
+    border: 30px solid transparent;
+    border-right: 60px solid #f6cc17;
+    animation-name: move2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;   
+    bottom: 93%;
+    right: 55%;
+}
 @keyframes move2 {
-    0%  {
-        border-right: 60px solid #f6cc17;
-    }
-    20% {
+    50% {
         border-right: 60px solid #395aa0; 
-        right: 0;
+        right: 15%;
         transform: rotate(180deg);
     }
     100% {
@@ -889,17 +846,29 @@ a.offer__button:hover {
         transform: rotate(360deg);
     }
 }
+#triangle-third {
+    filter: blur(1.5px);
+    border: 40px solid transparent;
+    border-right: 80px solid #f6cc17;
+    animation-name: move3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;   
+    top: 46%;
+    right: 94%;
+}
+#triangle-third:after{
+    position: absolute;
+    content: '';
+    width: 160px;
+    height: 160px;
+    top: -52px;
+    left: -14px;
+}
 @keyframes move3 {
-    0%  {
-        border-right: 80px solid #f6cc17;
-    }
     50%  {
         top: 80%;
         right: 80%;
-        
-    
         border-right: 80px solid #00a650; 
-       
         transform: rotate(180deg);
     }
     100% {
@@ -907,36 +876,68 @@ a.offer__button:hover {
         transform: rotate(360deg);
     }
 }
+#triangle-fourth {
+    /*filter: blur(2.5px);*/
+    border: 60px solid transparent;
+    border-right: 120px solid #f6cc17;
+    animation-name: move4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;   
+    top: 20%;
+    left: 80%;
+}
+#triangle-fourth:after{
+    position: absolute;
+    content: '';
+    width: 160px;
+    height: 160px;
+    top: -88px;
+    left: -14px;
+}
 @keyframes move4 {
-    0%  {
-        border-right: 120px solid #00a650;
-    }
     50%  {
-        top: 10%;
+        filter: blur(2.5px);
+        top: -20%;
         left: 75%;
         border-right: 120px solid #3a5ba2;       
         transform: rotate(180deg);
     }
-    100% {
+    75% {
+        filter: blur(1.5px);
         border-right: 120px solid #00a650;
+    }
+    100% {
         transform: rotate(360deg);
     }
 }
+#triangle-fifth {
+    filter: blur(0.5px);
+    border-top: 49px solid transparent;
+    border-bottom: 69px solid transparent;
+    border-right: 70px solid #f6cc17;
+    animation-name: move5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    top: 53%;
+    left: 78%;
+}
+#triangle-fifth:after{
+    position: absolute;
+    content: '';
+    width: 193px;
+    height: 182px;
+    top: -69px;
+    left: -41px;
+}
 @keyframes move5 {
-    0%  {
-        border-right: 80px solid #00a650;
-    }
     50%  {
         top: 84%;
         left: 35%;
-        
-    
-        border-right: 80px solid #3a5ba2; 
-       
+        border-right: 70px solid #3a5ba2; 
         transform: rotate(180deg);
     }
     100% {
-        border-right: 80px solid #3a5ba2;
+        border-right: 70px solid #f6cc17;
         transform: rotate(360deg);
     }
 }
