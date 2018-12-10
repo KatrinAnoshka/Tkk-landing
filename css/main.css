@@ -453,78 +453,124 @@ h3.conversion__subtitle--res {
     height: 34px;
 }
 
-/*Price-section*/
 
-.price__progress{
-  height: 100%;
-  width: 1040px;
-  /*left: calc(50% - 288px);*/
-  padding: 0;
-  margin: 0 auto;
-  position: relative;
+/***********Projects-section***********/
+.projects {
+    height: 880px;
 }
-#progress-bar{
-  width: 100%;
-    /* color: #000; */
-    height: 21px;
-    border: 3px solid #fff;
+.project__comp {
+   position: relative;
+    margin: 0 auto;
+    width: 780px;
+    height: auto;
+}
+.project__slider {
+    max-width: 719px;
+    height: 407px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    /* padding: 0 20px; */
+    background: none;
+    border: none;
+   /* background-image: url(../img/comp.png);
+    background-size: contain;*/
+    bottom: 764px;
+    left: 1px;
+}
+.project__slider .slides > li img {
+    width: 719px;
+    height: 407px;
     margin: 0 auto;
 }
-.progress__span {
-  height: 25px;
-    width: 25px;
-    border-radius: 100%;
-    border: 3px solid #fff;
-    background: #33862f;
-    position: absolute;
-    left: -2%;
-    top: -6px;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
+.projects__thumb {
+    bottom: 625px;
+    width: 1045px;
+    margin: 0 auto;
+    background: none;
+    border: none;
 }
+.projects__thumb .slides > li {
+    width: 135px!important;
+    height: 100px!important;
+    margin-right: 47px!important;
+}
+.projects__thumb .slides > li img {
+    width: 135px;
+    height: 100px;
+    /*margin: 0 auto;*/
+}
+.flex-direction-nav {
+    display: none;
+}
+.project__button {
+    position: relative;
+    bottom: 625px;
+    margin: 0 auto;
+    width: 415px;
+}
+/*************Price-section*************/
 
+/*Price-progress*/
 
-.second{
-  left: 9.22%;
+.progress {
+    width: 1020px;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
 }
-.third{
-  left: 20.33%;
+.progress .circle,
+.progress .bar {
+    display: inline-block;
 }
-.fourth{
-  left: 31.44%;
-}
-.fifth{
-  left: 42.55%;
-}
-.sixth{
-  left: 53.66%;
-}
-.seventh{
-  left: 64.77%;
-}
-.eighth{
-  left: 75.88%;
-}
-.ninth{
-  left: 86.99%;
-}
-.tenth{
-  left: 98.5%;
-}
-#progress-bar::-webkit-progress-value{ /* Changes line color */
-  /*background: #fff;*/
-  transition: all 0.4s ease-in-out;
-}
-#progress-bar::-webkit-progress-bar{ /* Changes background color */
-  background: #33862f;
-}
-.progress__active {
-  background: #fdcc22;
-  transition: all 0.4s ease-in-out;
-  height: 35px;
+.progress .circle {
+    position: relative;
+    z-index: 10;
     width: 35px;
-    top: -10px;
+    height: 35px;
+    border-radius: 50%;
+    background: #33862f;
+    border: 3px solid #fff;
 }
+.progress .bar {
+    position: relative;
+    width: 78px;
+    height: 23px;
+    top: -9px;
+    margin-left: -12px;
+    margin-right: -12px;
+    border-radius: 0;
+    background: #fff;
+}
+.progress .bar--active {
+    position: absolute;
+    z-index: 15;
+    background: #fdcc22;
+    top: 3px;
+    left: 12px;
+    width: 105px;
+    height: 17px;
+}
+.progress .circle--active {
+    background: #f6cc21;
+    z-index: 13;
+}
+.progress .circle--edge {
+    width: 40px;
+    height: 40px;
+    margin-bottom: -2px;
+}
+.progress__color {
+    position: absolute;
+    z-index: 12;
+    background: #33862f;
+    top: 15px;
+    left: 53px;
+    width: 90%;
+    height: 17px;
+}
+
+/*Step-section*/
 
 .price__step {
     max-width: 1040px;
@@ -792,7 +838,7 @@ a.offer__button:hover {
 .triangle {
     position: absolute;
     z-index: 1;
-    margin: 80px;
+    /*margin: 80px;*/
     width: 0;
     height: 0;
 }
@@ -832,13 +878,14 @@ a.offer__button:hover {
     animation-name: move2;
     animation-duration: 4s;
     animation-iteration-count: infinite;   
-    bottom: 93%;
+    top: -13%;
     right: 55%;
 }
 @keyframes move2 {
     50% {
         border-right: 60px solid #395aa0; 
         right: 15%;
+        top: -20%;
         transform: rotate(180deg);
     }
     100% {
@@ -854,7 +901,7 @@ a.offer__button:hover {
     animation-duration: 3s;
     animation-iteration-count: infinite;   
     top: 46%;
-    right: 94%;
+    right: 107%;
 }
 #triangle-third:after{
     position: absolute;
@@ -883,8 +930,8 @@ a.offer__button:hover {
     animation-name: move4;
     animation-duration: 4s;
     animation-iteration-count: infinite;   
-    top: 20%;
-    left: 80%;
+    top: 58%;
+    left: 89%;
 }
 #triangle-fourth:after{
     position: absolute;
@@ -897,8 +944,8 @@ a.offer__button:hover {
 @keyframes move4 {
     50%  {
         filter: blur(2.5px);
-        top: -20%;
-        left: 75%;
+        top: 0%;
+        left: 90%;
         border-right: 120px solid #3a5ba2;       
         transform: rotate(180deg);
     }
@@ -918,7 +965,7 @@ a.offer__button:hover {
     animation-name: move5;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    top: 53%;
+    top: 95%;
     left: 78%;
 }
 #triangle-fifth:after{
