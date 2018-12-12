@@ -9,25 +9,6 @@ $(document).ready(function() {
 		return false;
 	});
    	
-	/* Smooth scroll navigation*/
-
-	if( window.innerWidth >= 992 ){
-		$('a[href*=#]:not([href=#])').click(function() {
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				headerHeight = $('.header').height() + 80;  
-			if (target.length) {
-				$('html,body').animate({
-					scrollTop: target.offset().top - headerHeight
-				}, 800, function() {
-				target.focus();
-			});
-			return false;
-			}
-			}
-		});
-	}
 	
 	// Grid-section
 
@@ -40,17 +21,9 @@ $(document).ready(function() {
 	$(".time__wrap .time__item--active700")
 		.append('<div class="time__item--inner" style="width: calc(700% - 17px);"></div>');
 
-	/* Pop-up forms */
 
-	$("a.fancy").fancybox();
 
-	$(".cond__button, .calc-order").click(function() {
-		$("#form_back input[name=formname]").val($(this).text());
-	}).magnificPopup({
-		type:"inline",
-		fixedContentPos: false,
-		mainClass: 'mfp-forms'
-	});
+	
 
 	
 	/* Fixed menu */
@@ -59,11 +32,13 @@ $(document).ready(function() {
 		$(window).scroll(function () {
 			var scrolled = $(window).scrollTop();
 			if (scrolled >= 5) {
-				$('header').addClass('scroll');				
+				$('header').addClass('fixed');				
+				$('.about').addClass('about__fixed');				
 			}
 			else {
 				if (scrolled < 180) {
-					$('header').removeClass('scroll');					
+					$('header').removeClass('fixed');					
+					$('.about').removeClass('about__fixed');					
 				}
 			}
 		});
@@ -118,9 +93,28 @@ $(document).ready(function() {
 	});
 		
  	
-        
-    
+     /* Smooth scroll navigation*/
 
+	if( window.innerWidth >= 992 ){
+		$('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				headerHeight = $('.header').height() + 40;  
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top - headerHeight
+				}, 800, function() {
+				target.focus();
+			});
+			return false;
+			}
+			}
+		});
+	}
+	   
+    
+	
 
 
 });	
