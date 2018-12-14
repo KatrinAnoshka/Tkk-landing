@@ -27,9 +27,9 @@
 
 <body>
 
-	<div class="page">
+	<div class="page">  <!-- Background-image -->
 		
-		<!--********** Header-menu **********-->
+<!--********** Header-menu **********-->
 
 		<header class="header">
 			<div class="header__wrap">
@@ -38,14 +38,16 @@
 					<span class="logo__text">Таргет Консалт Компани</span>
 				</a>
 
-				<a href="#" class="menu__icon">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</a>
-						
 				<nav class="menu">
+      
+				<!-- Menu-icon close -->
+					<a href="#" class="menu__close">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+
 					<ul class="menu__links">
 						<li class="menu__links-item"><a href="#conversion">Калькулятор</a></li>
 						<li class="menu__links-item"><a href="#projects">Портфолио</a></li>
@@ -54,7 +56,16 @@
 						<li class="menu__links-item"><a href="#offer">Предложение</a></li>
 						<li class="menu__links-item"><a href="#contacts">Контакты</a></li>
 					</ul>
+							
 				</nav>
+
+				<!-- Menu-icon close -->
+				<a href="#" class="menu__icon">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
 
 				<div class="phone__wrap">
 					<a href="tel:74994040099" class="phone">+7(499)404-00-99</a>
@@ -63,21 +74,20 @@
 			</div>
 		</header>
 
-		<!--********** About-section **********-->
+<!--********** About-section **********-->
 
-		<section id="about" class="about">
-			
+		<section id="about" class="about">			
 			<div class="about__wrap">
 				<div class="about__description">
 					<h1 class="about__title">Разработаем уникальный сайт</h1>
 					<p class="about__text">Идейные соображения высшего порядка, а также постоянный качественный рост сферы нашей активности в значительной степени обуславливает создание динамичных форм развития нашей деятельности.</p>
-					<a href="#" class="button about__button">Узнать больше</a>
+					<a href="#" class="button button__descr">Узнать больше</a>
 				</div>
 				<img src="img/about.png" alt="Ноутбук с телефоном" class="about__img">
 			</div>
 		</section>
 
-		<!--********** Conversion-section **********-->
+<!--********** Conversion-section **********-->
 
 		<section id="conversion" class="conversion">
 			
@@ -87,7 +97,7 @@
 				<div class="conversion__data">
 					<h3 class="conversion__subtitle">Введите данные</h3>
 					<div class="conversion__block conversion__data-block">
-						<div class="range__wrap range__conversation">
+						<div class="range__wrap range__conversion">
 							<div class="range__item">
 								<div class="range__date">				
 									<label class="range__text" for="amount-1">Кол-во посетителей сайта за сутки</label>
@@ -116,9 +126,9 @@
 								</div> 	
 							  	<input type="text" class="amount" id="amount-4">
 							</div>
-						</div>						
-					</div>
-				</div>
+						</div> <!-- end of Range__conversion -->				
+					</div> <!-- end of Conversion__data-block -->
+				</div> <!-- end of Conversion__data -->
 
 				<div class="conversion__result">
 					<h3 class="conversion__subtitle conversion__subtitle--res">Вы получите</h3>
@@ -139,78 +149,86 @@
 						  	<p class="range__text range__text-result">Прибыль за год</p>
 						  	<output class="amount result__amount">22</output>
 						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+					</div> <!-- end of Conversion__result-block -->
+				</div> <!-- end of Conversion__result -->
+			</div> <!-- end of Conversion__wrap -->
+		</section> 
 
-		<!--************ Projects-section ************-->
+<!--************ Projects-section ************-->
 
 		<section id="projects" class="projects">
-			<h2 class="projects__title section__title">Наши работы</h2>
-
-			<!-- Place somewhere in the <body> of your page -->
+			<h2 class="section__title projects__title ">Наши работы</h2>
 				
-				<div class="project__comp">
-					<!-- <img src="img/phone.png" alt="" class="project__phone"> -->
-					<img src="img/comp.png" alt="">
-				</div>
+			<div class="project__comp">
+				<img src="img/comp.png" alt="Компьютер">
+			</div>
 
-<div id="slider" class="flexslider project__slider">
-  <ul class="slides">
-    <li>
-      <img src="img/projects/project-1.png" />
-    </li>
-    <li>
-      <img src="img/projects/project-1.png" />
-    </li>
-    <li>
-      <img src="img/projects/project-1.png" />
-    </li>
-    <li>
-      <img src="img/projects/project-1.png" />
-    </li>
-    <li>
-      <img src="img/projects/project-1.png" />
-    </li>
-    <li>
-      <img src="img/projects/project-1.png" />
-    </li>
-    <!-- items mirrored twice, total of 12 -->
-  </ul>
-</div>
-<div id="carousel" class="flexslider projects__thumb">
-  <ul class="slides">
-    <li>
-      <img src="img/projects/project-1.png" />
-    </li>
-    <li>
-      <img src="img/projects/project-1.png" />
-    </li>
-    <li>
-      <img src="img/projects/project-1.png" />
-    </li>
-    <li>
-      <img src="img/projects/project-1.png" />
-    </li>
-    <li>
-      <img src="img/projects/project-1.png" />
-    </li>
-    <li>
-      <img src="img/projects/project-1.png" />
-    </li>
-    <!-- items mirrored twice, total of 12 -->
-  </ul>
-  <div class="project__overlay"></div>
-</div>			
+			<div id="slider" class="flexslider project__slider">
+				<ul class="slides">
+					<li>
+					    <img src="img/projects/project-1.png" alt="Слайд">
+					</li>
+					<li>
+					   	<img src="img/projects/project-1.png" alt="Слайд">
+					</li>
+					<li>
+					    <img src="img/projects/project-1.png" alt="Слайд">
+					</li>
+					<li>
+					    <img src="img/projects/project-1.png" alt="Слайд">
+					</li>
+					<li>
+					   	<img src="img/projects/project-1.png" alt="Слайд">
+					</li>
+					<li>
+					    <img src="img/projects/project-1.png" alt="Слайд">
+					</li>
+				</ul>
+			</div> <!-- end of Project__slider -->
+	
+			<div id="carousel" class="flexslider projects__thumb">
+  				<ul class="slides">
+					<li>
+						<div class="carousel__item">
+						    <img src="img/projects/project-1.png" alt="Слайд миниатюра">
+						</div>
+					</li>
+					<li>
+						<div class="carousel__item">
+						    <img src="img/projects/project-1.png" alt="Слайд миниатюра">
+						</div>
+					</li>
+					<li>
+						<div class="carousel__item">
+						    <img src="img/projects/project-1.png" alt="Слайд миниатюра">
+						</div>
+					</li>
+					<li>
+						<div class="carousel__item">
+						    <img src="img/projects/project-1.png" alt="Слайд миниатюра">
+						</div>
+					</li>
+					<li>
+					    <div class="carousel__item">
+						    <img src="img/projects/project-1.png" alt="Слайд миниатюра">
+						</div>
+					</li>
+					<li>
+					    <div class="carousel__item">
+						    <img src="img/projects/project-1.png" alt="Слайд миниатюра">
+						</div>
+					</li>
+  				</ul>
+  				<div class="project__overlay"></div>
+			</div>	<!-- end of Project__thumb -->		
 		
-		<a href="#" class="button project__button">Посмотреть другие результаты</a>	
+			<a href="#" class="button button__descr project__button">Посмотреть другие результаты</a>	
 		</section>
 
-		<!--************* Price-section *************-->
+<!--************* Price-section *************-->
 
 		<section id="price" class="price">
-			<h2 class="price__title section__title">Калькулятор стоимости</h2>
+			<h2 class="section__title price__title">Калькулятор стоимости</h2>
 
 			<div class="price__wrap">
 
@@ -265,15 +283,15 @@
 					</a>
 				</div>
 				<a href="#" class="button price__button">Далее</a>
-			</div>
+			</div><!-- end of Price__step -->
 
-			</div>
+			</div> <!-- end of Price__wrap -->
 		</section>
 
-		<!-- Time-section -->
+<!--**************** Time-section ****************-->
 
 		<section id="time" class="time">
-			<h2 class="time__title section__title">Сроки выполнения работ</h2>
+			<h2 class="section__title time__title">Сроки выполнения работ</h2>
 
 			<div class="time__wrap">
 				<!--***************** Header-row *****************-->
@@ -438,19 +456,184 @@
 				<div class="grid__item time__item--cell time__item--gray"></div>
 				<div class="grid__item time__item--cell time__item--gray"></div>
 				<div class="grid__item time__item--cell time__item--gray time__item--cell-last"></div>
-			</div>
+			</div> <!-- end of Time__wrap -->
+
+			<div class="time__wrap time__wrap--mobile">
+				<!--***************** Header-row *****************-->
+				<div class="grid__item time__item--header">Дни</div>
+				<div class="grid__item time__item--header">1</div>
+				<div class="grid__item time__item--header">2</div>
+				<div class="grid__item time__item--header">3</div>
+				<div class="grid__item time__item--header">4</div>
+				<div class="grid__item time__item--header">5</div>
+				<div class="grid__item time__item--header">6</div>
+				<div class="grid__item time__item--header">7</div>
+				<div class="grid__item time__item--header">8</div>
+				<div class="grid__item time__item--header">9</div>
+				<div class="grid__item time__item--header">10</div>
+				<div class="grid__item time__item--header">11</div>
+				<div class="grid__item time__item--header">12</div>
+				<div class="grid__item time__item--header">13</div>
+				<div class="grid__item time__item--header">14</div>
+				<div class="grid__item time__item--header">15</div>
+				<div class="grid__item time__item--header">16</div>
+				<div class="grid__item time__item--header">17</div>
+				<div class="grid__item time__item--header">18</div>
+				<div class="grid__item time__item--header">19</div>
+				<div class="grid__item time__item--header">20</div>
+				<div class="grid__item time__item--header">21</div>
+				<!--*********** First-row ***********-->
+				<div class="grid__item time__item--title">Первый пункт разработки</div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell time__item--active200">
+				</div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell time__item--cell-last"></div>
+				<!--*********** Second-row ***********-->
+				<div class="grid__item time__item--title time__item--gray">Второй пункт разработки</div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray time__item--active"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray time__item--cell-last"></div>
+				<!--*********** Third-row ***********-->
+				<div class="grid__item time__item--title">Третий пункт разработки</div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell time__item--active500"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell time__item--cell-last"></div>
+				<!--*********** Fourth-row ***********-->
+				<div class="grid__item time__item--title time__item--gray">Четвертый пункт разработки</div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray time__item--cell-last"></div>
+				<!--*********** Fifth-row ***********-->
+				<div class="grid__item time__item--title">Пятый пункт разработки</div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell"></div>
+				<div class="grid__item time__item--cell time__item--cell-last"></div>
+				<!--*********** Sixth-row ***********-->
+				<div class="grid__item time__item--title time__item--gray">Шестой пункт разработки</div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray time__item--active700"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray"></div>
+				<div class="grid__item time__item--cell time__item--gray time__item--cell-last"></div>
+			</div> <!-- end of Time__wrap--mobile -->
+
 		</section>
 
-		<!--********** Offer-section **********-->
+<!--********** Offer-section **********-->
 
 		<section id="offer" class="offer">
-			<!-- <div class="triangle"></div> -->
 
 			<div class="offer__wrap">
 				<div class="offer__descr">
 					<h3 class="offer__title">Персональное предложение</h3>
 					<div class="offer__text">Равным образом постоянный количественный рост и сфера нашей активности способствует подготовки и реализации существенных финансовых и административных условий. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера </div>
-					<a href="#" class="button offer__button">Узнать подробнее</a>
+					<a href="#" class="button button__descr offer__button">Узнать подробнее</a>
 				</div>
 				<div class="offer__img">
 					<img id="triangle-first" src="img/offer/triangle-1.png" alt="Желтый треугольник">
@@ -459,12 +642,12 @@
 					<img id="triangle-fourth" src="img/offer/triangle-4.png" alt="Желтый треугольник">
 					<img id="triangle-fifth" src="img/offer/triangle-5.png" alt="Желтый треугольник">
 
-					<img src="img/offer-img.png" alt="Openning soon">
+					<img id="offer__logo" src="img/offer/offer-img.png" alt="Openning soon">
 				</div>
-			</div>
+			</div> <!-- end of Offer__wrap -->
 		</section>
 
-		<!-- Contacts-section -->
+<!--***************** Contacts-section *****************-->
 
 		<section id="contacts" class="contacts">
 			<h2 class="contacts__title section__title">Как с нами связаться</h2>
@@ -491,12 +674,12 @@
 						<p class="contacts__mail">Секретарь: <a href="mailto:secret@domain.ru" >secret@domain.ru</a></p>
 					</div>
 				</div>
-			</div>
+			</div> <!-- end of Contacts__wrap -->
 		</section>
 
 	</div> <!-- end of Page -->
 
-	<!-- Left-scroll -->
+<!--******************* Left-scroll *******************-->
 
 	<div class="scroll" style="margin-top: -5.66em;">
 		<ul>
@@ -510,8 +693,7 @@
 		</ul>
 	</div>
 
-	
-	<!-- Pop-up-form -->
+<!--**************** Pop-up-form ****************-->
 
     <div class="hidden">
         <form id="form_back">
@@ -535,57 +717,54 @@
     </div>
 	
 	<script>
-  $(function() {
-    $( ".slider-range-max-1" ).slider({
-      range: "max",
-      min: 1,
-      max: 150,
-      value: 10,
-      slide: function( event, ui ) {
-        $( "#amount-1" ).val( ui.value );
-      }
-    });
-    $( "#amount-1" ).val( $( ".slider-range-max-1" ).slider( "value" ) );
+  		$(function() {
+    		$( ".slider-range-max-1" ).slider({
+      			range: "max",
+      			min: 1,
+      			max: 150,
+      			value: 10,
+      			slide: function( event, ui ) {
+        			$( "#amount-1" ).val( ui.value );
+      			}
+    		});
+    		$( "#amount-1" ).val( $( ".slider-range-max-1" ).slider( "value" ) );
 
-     $( ".slider-range-max-2" ).slider({
-      range: "max",
-      min: 1,
-      max: 2000,
-      value: 120,
-      slide: function( event, ui ) {
-        $( "#amount-2" ).val( ui.value );
-      }
-    });
-    $( "#amount-2" ).val( $( ".slider-range-max-2" ).slider( "value" ) );
+     		$( ".slider-range-max-2" ).slider({
+      			range: "max",
+      			min: 1,
+      			max: 2000,
+      			value: 120,
+      			slide: function( event, ui ) {
+        			$( "#amount-2" ).val( ui.value );
+     			}
+    		});   
+    		$( "#amount-2" ).val( $( ".slider-range-max-2" ).slider( "value" ) );
 
-     $( ".slider-range-max-3" ).slider({
-      range: "max",
-      min: 1,
-      max: 10,
-      value: 2,
-      slide: function( event, ui ) {
-        $( "#amount-3" ).val( ui.value );
-      }
-    });
-    $( "#amount-3" ).val( $( ".slider-range-max-3" ).slider( "value" ) );
+     		$( ".slider-range-max-3" ).slider({
+      			range: "max",
+      			min: 1,
+      			max: 10,
+      			value: 2,
+      			slide: function( event, ui ) {
+        			$( "#amount-3" ).val( ui.value );
+      			}
+    		});
+    		$( "#amount-3" ).val( $( ".slider-range-max-3" ).slider( "value" ) );
 
-	  $( ".slider-range-max-4" ).slider({
-      range: "max",
-      min: 1,
-      max: 100,
-      value: 20,
-      slide: function( event, ui ) {
-        $( "#amount-4" ).val( ui.value );
-      }
-    });
-    $( "#amount-4" ).val( $( ".slider-range-max-4" ).slider( "value" ) );    
-  });
-
-
-  </script>
+	  		$( ".slider-range-max-4" ).slider({
+      			range: "max",
+      			min: 1,
+      			max: 100,
+      			value: 20,
+      			slide: function( event, ui ) {
+        			$( "#amount-4" ).val( ui.value );
+      			}
+    		});
+    		$( "#amount-4" ).val( $( ".slider-range-max-4" ).slider( "value" ) );    
+    	});
+	</script>
 	
 	<script src="libs//flexslider/jquery.flexslider.js"></script>
-	<!-- <script src="https://demos.flesler.com/jquery/scrollTo/js/jquery.scrollTo-min.js"></script> -->
 	<script src="js/common.js"></script>
 	
 </body>

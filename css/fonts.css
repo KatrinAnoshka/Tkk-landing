@@ -5,7 +5,6 @@
         url('../fonts/Futura/FuturaMediumC.eot?#iefix') format('embedded-opentype'),
         url('../fonts/Futura/FuturaMediumC.woff') format('woff'),
         url('../fonts/Futura/FuturaMediumC.ttf') format('truetype');
-    /*font-weight: 500;*/
     font-style: normal;
 }
 @font-face {

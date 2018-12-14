@@ -1,15 +1,96 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1205px) {	
-	
+@media only screen and (max-width : 1400px) {	
+	/********Left-scroll********/
+	.scroll {
+		display: none;
+	}
 }
-@media only screen and (max-width : 1170px) {
+@media only screen and (max-width : 1200px) {
 	
+	/********About-section********/
+	
+	section.about {
+		margin-top: 50px;
+	}
+	.about__img {
+	    width: 600px;
+	}
+	/*******Conversion-section*******/
+	
+	section.conversion {
+		padding: 0;
+	}
+	.conversion__wrap {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+		padding: 0 20px; 
+	}
+	h3.conversion__subtitle {
+		padding-left: 0;
+		text-align: center;
+	}
+	.conversion__result-block {
+		position: static;
+	}
+
+	/*******Price-section*******/
+
+	.progress .bar {
+		width: 50px;
+	}
+	.progress__color {
+		
+		width: 70%;
+	}
+
+	/*Offer-section*/
+
+	.offer__logo {
+		width: 500px;
+	}
+	.offer__descr  {
+		width: 50%;
+	}
+
+	/*******Contacts-section*******/
+	
+	.contacts__wrap {
+		justify-content: center;
+	}
+	.contacts__item {
+	    width: 34%;
+    	margin: 15px auto 0;
+    	text-align: center;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+
+	/*About-section*/
+
+	.about__wrap {
+		flex-direction: column;
+    	align-items: center;
+	}
+	.about__description {
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.about__text,
+	h1.about__title {
+		text-align: center;
+	}
+	.about__img {
+		margin-top: 40px;
+	}
 	
 }
 
@@ -20,20 +101,185 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	
-	/*Disable Animation on Mobile Devices*/
-	.animated {
-		/*CSS transitions*/
-		-o-transition-property: none !important;
-		-webkit-transition-property: none !important;
-		transition-property: none !important;
-		/*CSS transforms*/
-		-ms-transform: none !important;
-		-webkit-transform: none !important;
-		transform: none !important;
-		/*CSS animations*/
-		-webkit-animation: none !important;
-		animation: none !important;
+
+	/*Header-section*/
+
+	.header {
+		padding: 20px 0 0;
 	}
+	.logo {
+		padding-left: 10px;
+	}
+	.phone__wrap {
+		padding-right: 10px;
+	}
+	a.phone__button {
+		display: none;
+	}
+
+	/*Adaptive-menu*/
+
+	.menu__icon {
+		display: block;
+		width: 45px;
+    	height: 35px;
+    	position: absolute;
+    	top: 55px;
+    	left: 10px;
+    	cursor: pointer;
+    	z-index: 100;
+    	transition: opacity .3s ease-out;
+	}
+	.menu__icon span,
+	.menu__close span {
+    	display: block;
+    	position: absolute;
+    	height: 3px;
+    	width: 100%;
+    	background: #f6cc21;
+    	border-radius: 9px;
+    	opacity: 1;
+    	left: 0;
+	}
+	.menu__icon:hover span,
+	.menu__close:hover span {
+	    background: #fff;
+	}
+	.menu__icon span:nth-child(1) {
+	    top: 0px;
+	}
+	.menu__icon span:nth-child(2), 
+	.menu__icon span:nth-child(3) {
+	    top: 13px;
+	}
+	.menu__icon span:nth-child(4) {
+	    top: 26px;
+	}
+	.menu__close {
+		display: block;
+	    cursor: pointer;
+	    width: 45px;
+	    height: 35px;
+	    position: relative;
+	    top: 25px;
+	    left: 5px;
+	}
+	.menu__close span:nth-child(1) {
+	    top: 18px;
+	    width: 0%;
+	    left: 50%;
+	}
+	.menu__close span:nth-child(2) {
+	    -webkit-transform: rotate(45deg);
+	        -ms-transform: rotate(45deg);
+	            transform: rotate(45deg);
+	}
+	.menu__close span:nth-child(3) {
+	    -webkit-transform: rotate(-45deg);
+	        -ms-transform: rotate(-45deg);
+	            transform: rotate(-45deg);
+	}
+	.menu__close span:nth-child(4) {
+	    top: 18px;
+	    width: 0%;
+	    left: 50%;
+	}
+	.menu__links {
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+	    -webkit-box-align: center;
+	        -ms-flex-align: center;
+	            align-items: center;
+	    line-height: 34px;
+	    padding-bottom: 10px;
+	    padding-left: 0;	    
+	}
+	.menu {
+		background: #132e49 url('../img/menu-bg.jpg') repeat left top;
+		left: -285px; 
+		top: 0;
+		height: 100%;
+		position: fixed;
+		width: 285px;
+		z-index: 200;
+		transition: all .3s linear;
+	}
+	.menu__links-item {
+		padding-right: 0;
+		padding-bottom: 12px;
+	}
+	.icon__hidden {
+		opacity: 0;		
+	}
+	
+	/*Conversion-section*/
+
+	.range__item {
+		padding-right: 0;
+	}
+	.range__wrap {
+		padding: 15px;
+	}
+	.conversion__block {
+		padding-bottom: 20px;
+	}
+	
+	/*Price-section*/
+
+	a.price__item {
+		width: 35%;
+		margin-top: 20px;
+	}
+
+	/*Time-section*/
+
+	.time__wrap {
+		grid-template-columns: 130px repeat(21, 1fr);
+	}
+	.time__item--title {
+		padding: 10px;
+	}
+
+	/*Offer-section*/
+
+	.offer__wrap {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}	
+	.offer__descr {
+		width: 100%;
+	}
+	.offer__title {
+		text-align: center;
+	}
+	.offer__button {
+		margin: 48px auto 0;
+	}
+	.offer__img {
+		margin-top: 100px;
+		text-align: center;
+	}
+	
+	/*Contacts-section*/
+
+	.contacts__item {
+		width: 75%;
+		margin-top: 35px;
+	}
+	.contacts__title {
+		margin-top: 75px;
+	}
+
+
+	
+
+
+	
 }
 @media only screen and (max-width : 728px) {
 	
@@ -43,12 +289,72 @@
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 500px) {	
+
+	body {
+		font-size: 0.7em;
+	}
+	.page {
+		padding-bottom: 50px;
+	}
+	.about__wrap,
+	.conversion__wrap {
+		padding: 0 10px;
+	}
+
+	/*About-section*/
+	
+	.button__descr {
+		padding: 20px 80px;
+	}
+
+	/*Conversion-section*/
+
+	h2.section__title {
+		margin-top: 60px;
+    	margin-bottom: 35px;
+    	padding: 0 10px;
+	}
+	
+	/*Price-section*/
+	
+	.price__items {
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+	a.price__item {
+		width: 70%;
+	} 
+	a.price__button {
+		line-height: 3.6;
+	}
+ 
+
+	/*Offer-section*/
+	.offer {
+		margin-top: 60px;
+	}
+	.offer__img {
+		display: none;
+	}
+	.offer__button {
+		padding: 20px 0 !important;
+	}
+	/*Contacts-section*/
+
+	.contacts__wrap :nth-child(1) {
+		margin-top: 0;
+	}
 	
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 400px) {
-	
+	/*Header-menu*/
+	.phone__wrap {
+		position: absolute;
+    	top: 56px;
+    	right: 0;
+	}
 }
 
 /*==========  Mobile First Method  ==========*/
