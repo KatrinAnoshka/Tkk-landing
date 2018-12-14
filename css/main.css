@@ -489,6 +489,7 @@ h3.conversion__subtitle--res {
     margin: 20px auto;
     text-align: center;
     position: relative;
+    display: none;   /*!!!!!!!!!!!!!!*/
 }
 .progress .circle,
 .progress .bar {
@@ -545,6 +546,76 @@ h3.conversion__subtitle--res {
 }
 .price__wrap {
     padding: 0 20px;
+}
+
+
+/*Bar!!!!!!!!!!!!!!!!!!!!!!*/
+
+.bar {
+    width: 1040px;
+    max-width: 100%;
+    height: 17px;
+    background-color: rgb(51, 134, 47);
+    border: 3px solid #fff;
+    position: relative;
+    margin: 0 auto;
+}
+.bar-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 12;
+    border: 3px solid #fff;
+    background-color: rgb(51, 134, 47);
+    top: -12px;
+}
+.bar-circle-one {
+    left: -1%;
+}
+.bar-circle-two {
+    left: 12%;
+}
+.bar-circle-three {
+    left: 23%;
+}
+.bar-circle-four {
+    left: 34%;
+}
+.bar-circle-five {
+    left: 45%;
+}
+.bar-circle-six {
+    left: 54%;
+}
+.bar-circle-seven {
+    left: 65%;
+}
+.bar-circle-eight {
+    left: 76%;
+}
+.bar-circle-nine {
+    left: 87%;
+}
+.bar-circle-ten {
+    left: 97%;
+}
+.bar-circle-edge {
+    width: 43px;
+    height: 43px;
+    background-color: #f6cc21;
+    top: -93%;
+}
+.bar-progress {
+    width: 1040px;
+    max-width: 100%;
+    height: 17px;
+    background-color: rgb(51, 134, 47);
+    /*border: 3px solid #fff;*/
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
 }
 
 /*Step-section*/
@@ -663,6 +734,11 @@ a.price__button:hover {
 /*********----------Time-section----------*********/
 
 .time {
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.time__container {
     padding: 0 20px;
 }
 .time__wrap {
@@ -729,9 +805,46 @@ a.price__button:hover {
 /*Time__wrap--mobile*/
 
 .time__wrap--mobile {
-    grid-template-columns: 100px repeat(7, 1fr);
+    height: auto;
+    border-radius: 25px;
+    border: 10px solid rgb(255, 255, 255);
+    border-bottom: 24px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 18px 2px rgba(112, 177, 53, 0.55);
+    overflow: hidden;
+    display: -ms-grid;
+    display: none;
+    margin: 0 auto;
+    position: relative;
+    z-index: 8;
+    grid-template-columns: 50px repeat(6, 1fr);
+    border-top: 24px solid rgb(255, 255, 255);
 }
-
+.time__wrap--mobile .time__item--title {
+    border-top: 1px solid rgba(152, 209, 224, 0.6);
+    padding: 10px;
+}
+.time__wrap--mobile .time__item--header {
+    height: inherit;
+}
+.time__wrap--mobile .time__item--cell {
+    border-right: 1px solid rgba(152, 209, 224, 0.6);
+    border-left: none;
+}
+.time__wrap--mobile .time__item--inner {
+    position: absolute;
+    content: '';
+    top: 28%;
+    transform: translate(-50%);
+    left: 43%;
+    background-color: #a0b8e3;
+    z-index: 25;
+    width: 27%;
+    border-bottom-left-radius: 100px 80px;
+    border-top-left-radius: 100px 80px;
+    border-bottom-right-radius: 100px 80px;
+    border-top-right-radius: 100px 80px;
+}
 
 
 /*********-----------Offer-section-----------*********/

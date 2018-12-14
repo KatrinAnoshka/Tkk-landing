@@ -52,6 +52,12 @@ var main = function() {
 	$(".time__wrap .time__item--active700")
 		.append('<div class="time__item--inner" style="width: calc(700% - 17px);"></div>');
 
+	$(".time__wrap--mobile .time__item--active200")
+		.append('<div class="time__item--inner" style="height: calc(200% - 17px);"></div>');
+
+	$(".time__wrap--mobile .time__item--active400")
+		.append('<div class="time__item--inner" style="height: calc(400% - 17px);"></div>');		
+
 /************* Fixed menu *************/
 
 	if ($(window).width() > 768)   {

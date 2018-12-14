@@ -241,7 +241,7 @@
 	.time__item--title {
 		padding: 10px;
 	}
-
+	
 	/*Offer-section*/
 
 	.offer__wrap {
@@ -275,13 +275,20 @@
 		margin-top: 75px;
 	}
 
-
-	
-
-
-	
 }
-@media only screen and (max-width : 728px) {
+@media only screen and (max-width : 650px) {
+	
+	/*Time-section*/
+	
+	.time {
+	    width: 580px;
+	}
+	.time__wrap {
+		display: none;
+	}
+	.time__wrap--mobile {
+		display: grid;
+	}
 	
 }
 @media only screen and (max-width : 640px) {
