@@ -16,6 +16,8 @@
 	
 	<link rel="stylesheet" href="libs/jquery/jquery-ui.css">
 	<link rel="stylesheet" href="libs/flexslider/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="libs/animate/animate.min.css" />
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -78,12 +80,12 @@
 
 		<section id="about" class="about">			
 			<div class="about__wrap">
-				<div class="about__description">
+				<div class="about__description wow bounceInLeft">
 					<h1 class="about__title">Разработаем уникальный сайт</h1>
 					<p class="about__text">Идейные соображения высшего порядка, а также постоянный качественный рост сферы нашей активности в значительной степени обуславливает создание динамичных форм развития нашей деятельности.</p>
-					<a href="#" class="button button__descr">Узнать больше</a>
+					<a href="#form_back" class="button button__descr button__about">Узнать больше</a>
 				</div>
-				<img src="img/about.png" alt="Ноутбук с телефоном" class="about__img">
+				<img src="img/about.png" alt="Ноутбук с телефоном" class="about__img wow bounceInDown">
 			</div>
 		</section>
 
@@ -94,7 +96,7 @@
 			<h2 class="section__title conversion__title">Калькулятор конверсий</h2>
 
 			<div class="conversion__wrap">
-				<div class="conversion__data">
+				<div class="conversion__data wow zoomIn">
 					<h3 class="conversion__subtitle">Введите данные</h3>
 					<div class="conversion__block conversion__data-block">
 						<div class="range__wrap range__conversion">
@@ -130,7 +132,7 @@
 					</div> <!-- end of Conversion__data-block -->
 				</div> <!-- end of Conversion__data -->
 
-				<div class="conversion__result">
+				<div class="conversion__result wow zoomIn">
 					<h3 class="conversion__subtitle conversion__subtitle--res">Вы получите</h3>
 					<div class="conversion__block conversion__result-block">
 						<div class="range__wrap range__wrap-result">
@@ -198,7 +200,7 @@
 				</ul>
 			</div> <!-- end of Project__slider -->
 	
-			<div id="carousel" class="flexslider projects__thumb">
+			<div id="carousel" class="flexslider projects__thumb wow bounceInLeft">
   				<ul class="slides">
 					<li>
 						<div class="carousel__item">
@@ -263,7 +265,7 @@
 					</div>	
 				</div>		
 			<!-- Step one -->
-			<div class="price__step">
+			<div class="price__step wow zoomIn">
 
 				<p class="step__title">Для чего Вам нужен сайт?</p>
 				<p class="step__subtitle">Выберите наиболее подходящий для Вас вариант и нажмите «Далее»</p>
@@ -293,7 +295,7 @@
 		<section id="time" class="time">
 			<h2 class="section__title time__title">Сроки выполнения работ</h2>
 
-			<div class="time__container">
+			<div class="time__container wow zoomInUp">
 				<div class="time__wrap">
 					<!--***************** Header-row *****************-->
 					<div class="grid__item time__item--header">Дни</div>
@@ -650,7 +652,7 @@
 				<div class="offer__descr">
 					<h3 class="offer__title">Персональное предложение</h3>
 					<div class="offer__text">Равным образом постоянный количественный рост и сфера нашей активности способствует подготовки и реализации существенных финансовых и административных условий. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера </div>
-					<a href="#" class="button button__descr offer__button">Узнать подробнее</a>
+					<a href="#form_back" class="button button__descr offer__button">Узнать подробнее</a>
 				</div>
 				<div class="offer__img">
 					<img id="triangle-first" src="img/offer/triangle-1.png" alt="Желтый треугольник">
@@ -671,22 +673,22 @@
 
 			<div class="contacts__wrap">
 				<div class="contacts__item">
-					<img src="img/contacts/icon-map.png" alt="icon" class="contacts__icon">
-					<p class="contacts__subtitle">Адрес</p>
-					<div class="contacts__descr">129430,г.Москва, Набережная 8, стр. 33, офис 404</div>
+					<img src="img/contacts/icon-map.png" alt="icon" class="contacts__icon wow bounceInUp" data-wow-duration="0.0">
+					<p class="contacts__subtitle wow bounceInLeft" data-wow-duration="0.1">Адрес</p>
+					<div class="contacts__descr wow bounceInRight" data-wow-duration="0.1">129430,г.Москва, Набережная 8, стр. 33, офис 404</div>
 				</div>
 				<div class="contacts__item">
-					<img src="img/contacts/icon-phone.png" alt="icon" class="contacts__icon">
-					<p class="contacts__subtitle">Телефон</p>
-					<div class="contacts__descr">
+					<img src="img/contacts/icon-phone.png" alt="icon" class="contacts__icon wow bounceInUp" data-wow-duration="0.0">
+					<p class="contacts__subtitle wow bounceInLeft" data-wow-duration="0.1">Телефон</p>
+					<div class="contacts__descr wow bounceInRight" data-wow-duration="0.1">
 						<a href="tel:+74959990000" class="contacts__phone">+7 495 999 00 00</a>
 						<a href="tel:+88009901010" class="contacts__phone">8 800 990 10 10</a>
 					</div>
 				</div>
 				<div class="contacts__item">
-					<img src="img/contacts/icon-mail.png" alt="icon" class="contacts__icon">
-					<p class="contacts__subtitle">E-mail</p>
-					<div class="contacts__descr">
+					<img src="img/contacts/icon-mail.png" alt="icon" class="contacts__icon wow bounceInUp" data-wow-duration="0.0">
+					<p class="contacts__subtitle wow bounceInLeft" data-wow-duration="0.1">E-mail</p>
+					<div class="contacts__descr wow bounceInRight" data-wow-duration="0.1">
 						<p class="contacts__mail">Менеджер: <a href="mailto:info@domain.ru" >info@domain.ru</a></p>
 						<p class="contacts__mail">Секретарь: <a href="mailto:secret@domain.ru" >secret@domain.ru</a></p>
 					</div>
@@ -710,12 +712,12 @@
 		</ul>
 	</div>
 
-<!--**************** Pop-up-form ****************-->
+<!-- Pop-up-form ** Order-call-->
 
     <div class="hidden">
         <form id="form_back">
-            <h2>Заказать звонок</h2>
-            <p>Мы свяжемся с Вами в течение 10 минут<br> и ответим на все Ваши вопросы</p>
+            <h4>Оставить заявку</h4>
+            <p>Заполните форму и мы перезвоним вам<br> в ближайшее время</p>
             <label>
                 <span>Ваше имя:</span>
                 <input type="text" name="name" required />
@@ -725,11 +727,10 @@
                 <input type="text" name="phone" value="+(375)" required />
             </label>
             <div class="button_wrap">
-                <button class="button btn-green">Отправить заявку</button>
+                <button class="button button__form">Отправить</button>
             </div>
 
             <input type="hidden" name="formname" value="">
-
         </form>
     </div>
 	
@@ -781,7 +782,9 @@
     	});
 	</script>
 	
+	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script src="libs//flexslider/jquery.flexslider.js"></script>
+	<script src="libs/animate/wow.min.js"></script>
 	<script src="js/common.js"></script>
 	
 </body>

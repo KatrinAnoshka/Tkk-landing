@@ -46,6 +46,7 @@ h2.section__title {
 
 .header {
     padding: 10px 20px;
+
 }
 .header__wrap {
     max-width: 1200px;
@@ -60,19 +61,21 @@ h2.section__title {
     -ms-align-items: center;
     align-items: center;
     justify-content: space-between;
-    transition: all .3s ease-out;
+    
     position: relative;
 }
-/*.header__fixed {
+.header__fixed {
     position: fixed;
     top: 0;
     left: 50%;
     transform: translate(-50%);
     background: linear-gradient(to top, rgba(20, 47, 74, 0.81), #132e49);
     width: 100%;
-    max-width: 1920px;
+    max-width: 1880px;
     z-index: 1000;
-}*/
+    transition: all .5s ease-in-out;
+
+}
 .logo {
     display: -webkit-flex;
     display: -moz-flex;
@@ -84,6 +87,7 @@ h2.section__title {
     text-decoration: none;
     padding-left: 10px;
 }
+
 .logo__text {
     font-size: 0.8em;
     line-height: 1.2;
@@ -174,12 +178,13 @@ section.about {
     max-width: 1200px;
     width: 100%;
     height: auto;
-    margin: 120px auto 0;
-    transition: all .3s ease-out;
+    margin: 0 auto;
+    padding-top: 120px;
+    /*transition: all .3s ease-out;*/
 }
-section.about.about__fixed {
+/*section.about.about__fixed {
     margin-top: 0;
-}
+}*/
 .about__wrap {
     display: -webkit-flex;
     display: -moz-flex;
@@ -1111,24 +1116,27 @@ a.price__button:hover {
     background: #fff;
 }
 
-/*******------------ Pop-up-form ------------*******/
+/***************--------- Pop-up-form ---------***************/
 
 .hidden {
     display: none;
 }
-form {
+#form_back {
     background-color: #F7F7F7;
     padding: 25px 30px;
-    border: #79b433 5px solid;
+    border: #f6cc21 5px solid;
     border-radius: 5px;
+    max-width: 420px;
+    margin: auto;
+    position: relative;
 }
-form label {
+#form_back label {
     display: block;
     margin-bottom: 15px;
     color: #666;
     font-size: 14px;
 }
-form input {
+#form_back input {
     display: block;
     line-height: 40px;
     height: 40px;
@@ -1140,27 +1148,44 @@ form input {
     font-size: 20px;
     margin-top: 3px;
 }
-form .button_wrap {
+#form_back .button_wrap {
     text-align: center;
     margin: 30px 0 10px;
 }
-.button.btn-green {
-    background-color: #79b433;
-    color: #fff;
-    outline: none;
-    font-size: 15px;
-    padding: 8px 10px;
-}
-#form_back {
-    max-width: 420px;
-    margin: auto;
-    position: relative;
-}
-#form_back h2 {
+.button.button__form {
+    max-width: 100%;
+    cursor: pointer;
     text-align: center;
-    font-weight: normal;
+    text-decoration: none;
+    border-radius: 5px;
+    -webkit-transition: color 0.2s ease-out,opacity 0.2s ease-out,background 0.2s ease-out;
+    -o-transition: color 0.2s ease-out,opacity 0.2s ease-out,background 0.2s ease-out;
+    transition: color 0.2s ease-out,opacity 0.2s ease-out,background 0.2s ease-out;
+    width: 200px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: bold;
+    font-weight: 300;
+    line-height: 2;
+    background-color: rgb(51, 134, 47);
+    border: 1px solid rgb(51, 134, 47);
+    border-radius: 40px;
+    box-shadow: 0px 0px 18px 2px rgba(112, 177, 53, 0.55);
+    color: #fff;
+}
+.button.button__form:hover {
+    background-color: #fff;
+    color: rgb(51, 134, 47);
+    box-shadow: none;
+}
+#form_back h4 {
+    color: rgb(51, 134, 47);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
 }
 #form_back p {
+    color: #3c3c3c;
     text-align: center;
+    padding: 15px 0 20px;
 }
-

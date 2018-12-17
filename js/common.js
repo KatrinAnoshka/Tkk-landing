@@ -65,12 +65,12 @@ var main = function() {
 			var scrolled = $(window).scrollTop();
 			if (scrolled >= 5) {
 				$('header').addClass('header__fixed');				
-				$('.about').addClass('about__fixed');				
+				// $('.about').addClass('about__fixed');				
 			}
 			else {
 				if (scrolled < 180) {
 					$('header').removeClass('header__fixed');					
-					$('.about').removeClass('about__fixed');					
+					// $('.about').removeClass('about__fixed');					
 				}
 			}
 		});
@@ -87,7 +87,16 @@ var main = function() {
 	  	});	
 	});
 	
+	/* Pop-Up forms */
 
+	$(".offer__button, .button__about").click(function() {
+		$("#form_back input[name=formname]").val($(this).text());
+	}).magnificPopup({
+		type:"inline",
+		mainClass: 'mfp-forms'
+	});
+
+	
 /**************** Left-scroll ****************/
 
 	$(window).scroll(function(event){
@@ -130,6 +139,9 @@ var main = function() {
 			}
 		});
 	}
+
+// Animated
+	new WOW().init();
 
 });	
 	

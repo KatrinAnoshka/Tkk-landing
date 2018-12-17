@@ -8,6 +8,12 @@
 	}
 }
 @media only screen and (max-width : 1200px) {
+	.header__fixed .logo {
+    padding-left: 30px;
+}
+.header__fixed .phone__wrap {
+    padding-right: 30px;
+}
 	
 	/********About-section********/
 	
@@ -119,6 +125,7 @@
 	a.phone__button {
 		display: none;
 	}
+
 
 	/*Adaptive-menu*/
 
