@@ -40,15 +40,9 @@
 		position: static;
 	}
 
-	/*******Price-section*******/
+	
 
-	.progress .bar {
-		width: 50px;
-	}
-	.progress__color {
-		
-		width: 70%;
-	}
+	
 
 	/*Offer-section*/
 
@@ -90,6 +84,12 @@
 	}
 	.about__img {
 		margin-top: 40px;
+	}
+
+	/*******Price-section*******/ 
+
+	.bar__container {
+		width: 85%;
 	}
 	
 }
@@ -232,6 +232,32 @@
 		width: 35%;
 		margin-top: 20px;
 	}
+	.bar,
+	.bar__progress,
+	.bar__progress--active {
+		height: 5px;
+	}
+	.bar {
+		   border: 2px solid #fff;
+	}
+	
+	.bar__circle {
+		width: 20px;
+		height: 20px;
+		border: 2px solid #fff;
+		top: -10px;
+	}
+	.bar__circle--edge {
+		width: 25px;
+		height: 25px;
+		top: -12px;
+	}
+	.bar__circle--one {
+		left: -3%;
+	}
+	.bar__circle--ten {
+		left: 98%;
+	}
 
 	/*Time-section*/
 
@@ -280,14 +306,26 @@
 	
 	/*Time-section*/
 	
-	.time {
-	    width: 580px;
-	}
 	.time__wrap {
 		display: none;
 	}
 	.time__wrap--mobile {
 		display: grid;
+	}
+	.time__container {
+		padding: 0;
+	}
+	.time__wrap--mobile .time__item--title {
+		font-size: 0.7em;
+		padding: 3px;
+		text-align: center;
+		/*vertical-align: middle;*/
+	}
+	.time__wrap--mobile .time__item--inner {
+		margin-top: 4px;
+		margin-left: 0;
+		margin-right: 0;
+		left: 50%;
 	}
 	
 }
@@ -328,13 +366,24 @@
 		margin-top: 20px;
 		margin-bottom: 40px;
 	}
+	.price__wrap {
+		margin-top: 50px;
+	}
 	a.price__item {
 		width: 70%;
 	} 
 	a.price__button {
 		line-height: 3.6;
 	}
- 
+ 	.bar__container {
+	    padding-right: 8px;
+	}
+
+	/*Time-section*/
+
+	.time__title {
+		margin-top: 90px !important;
+	}
 
 	/*Offer-section*/
 	.offer {

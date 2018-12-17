@@ -475,92 +475,36 @@ h3.conversion__subtitle--res {
 
 /*********---------------Price-section---------------*******/
 
-/*Price-progress*/
-
 .price {
     max-width: 1140px;
     width: 100%;
     height: auto;
     margin: 0 auto;
 }
-.progress {
-    width: 1020px;
-    max-width: 100%;
-    margin: 20px auto;
-    text-align: center;
-    position: relative;
-    display: none;   /*!!!!!!!!!!!!!!*/
-}
-.progress .circle,
-.progress .bar {
-    display: inline-block;
-}
-.progress .circle {
-    position: relative;
-    z-index: 10;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background: #33862f;
-    border: 3px solid #fff;
-}
-.progress .bar {
-    position: relative;
-    width: 78px;
-    max-width: 100%;
-    height: 23px;
-    top: -9px;
-    margin-left: -12px;
-    margin-right: -12px;
-    border-radius: 0;
-    background: #fff;
-}
-.progress .bar--active {
-    position: absolute;
-    z-index: 15;
-    background: #fdcc22;
-    top: 3px;
-    left: 12px;
-    width: 105px;
-    height: 17px;
-}
-.progress .circle--active {
-    background: #f6cc21;
-    z-index: 13;
-}
-.progress .circle--edge {
-    width: 40px;
-    height: 40px;
-    margin-bottom: -2px;
-}
-.progress__color {
-    position: absolute;
-    z-index: 12;
-    background: #33862f;
-    top: 15px;
-    left: 50%;
-    transform: translate(-50%);
-    width: 932px;
-    max-width: 100%;
-    height: 17px;
-}
+
 .price__wrap {
     padding: 0 20px;
 }
 
+/*Price-progress*/
 
-/*Bar!!!!!!!!!!!!!!!!!!!!!!*/
-
-.bar {
+.bar__container {
+    /*padding: 0 20px;*/
     width: 1040px;
     max-width: 100%;
+    margin: 0 auto;
+}
+.bar {
+    /*width: 1040px;
+    max-width: 100%;*/
     height: 17px;
     background-color: rgb(51, 134, 47);
     border: 3px solid #fff;
     position: relative;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    padding: 0 20px;
 }
-.bar-circle {
+.bar__circle {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -570,52 +514,65 @@ h3.conversion__subtitle--res {
     background-color: rgb(51, 134, 47);
     top: -12px;
 }
-.bar-circle-one {
+.bar__circle--one{
     left: -1%;
+    background-color: #f6cc21;
+    z-index: 13;
+} 
+.bar__circle--two {
+    left: 10.5%;
 }
-.bar-circle-two {
-    left: 12%;
+.bar__circle--three {
+    left: 22%;
 }
-.bar-circle-three {
-    left: 23%;
+.bar__circle--four {
+    left: 33%;
 }
-.bar-circle-four {
-    left: 34%;
+.bar__circle--five {
+    left: 44%;
 }
-.bar-circle-five {
-    left: 45%;
+.bar__circle--six {
+    left: 54.5%;
 }
-.bar-circle-six {
-    left: 54%;
-}
-.bar-circle-seven {
+.bar__circle--seven {
     left: 65%;
 }
-.bar-circle-eight {
+.bar__circle--eight {
     left: 76%;
 }
-.bar-circle-nine {
+.bar__circle--nine {
     left: 87%;
 }
-.bar-circle-ten {
-    left: 97%;
+.bar__circle--ten {
+    left: 96.5%;
 }
-.bar-circle-edge {
+.bar__circle--edge {
     width: 43px;
     height: 43px;
-    background-color: #f6cc21;
+    /*background-color: #f6cc21;*/
     top: -93%;
 }
-.bar-progress {
+.bar__progress,
+.bar__progress--active {
     width: 1040px;
     max-width: 100%;
     height: 17px;
-    background-color: rgb(51, 134, 47);
+    
     /*border: 3px solid #fff;*/
     position: absolute;
     margin: 0 auto;
     top: 0;
     left: 0;
+    z-index: 12;
+}
+.bar__progress {
+    background-color: rgb(51, 134, 47);
+    z-index: 12;
+}
+.bar__progress--active{
+    background-color: #f6cc21;
+    z-index: 13;
+    width: 2.5%;
 }
 
 /*Step-section*/
@@ -817,7 +774,7 @@ a.price__button:hover {
     margin: 0 auto;
     position: relative;
     z-index: 8;
-    grid-template-columns: 50px repeat(6, 1fr);
+    grid-template-columns: 30px repeat(6, 1fr);
     border-top: 24px solid rgb(255, 255, 255);
 }
 .time__wrap--mobile .time__item--title {
@@ -826,6 +783,7 @@ a.price__button:hover {
 }
 .time__wrap--mobile .time__item--header {
     height: inherit;
+        font-size: 0.77em;
 }
 .time__wrap--mobile .time__item--cell {
     border-right: 1px solid rgba(152, 209, 224, 0.6);
@@ -836,7 +794,7 @@ a.price__button:hover {
     content: '';
     top: 28%;
     transform: translate(-50%);
-    left: 43%;
+    left: 37%;
     background-color: #a0b8e3;
     z-index: 25;
     width: 27%;

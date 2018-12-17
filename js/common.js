@@ -79,26 +79,14 @@ var main = function() {
 	
 /*************** Price-section ***************/
 
-	$('.price__button').click(function() {
-	    if ($(this).hasClass('first')){
-	        $('#progress-bar').val('0');
-	        $(this).nextAll().removeClass('progress__active');  
-	    } else if ($(this).hasClass('second')) {
-	        $(this).nextAll().removeClass('progress__active');  
-	        $('#progress-bar').val('34');
-	        $(this).prevAll().addClass('progress__active');  
-	        $(this).addClass('progress__active');
-	    } else if ($(this).hasClass('third')) {
-	        $(this).nextAll().removeClass('progress__active');  
-	        $('#progress-bar').val('67');
-	        $(this).prevAll().addClass('progress__active'); 
-	        $(this).addClass('progress__active');
-	    } else {
-	        $('#progress-bar').val('100');
-	        $(this).addClass('progress__active');
-	        $(this).prevAll().addClass('progress__active');
-	    }
+	$(".price__button--one").click(function() {
+	  	$(".bar__progress--active").css("width","11.5%");	
+	  	$(".bar__circle--two").css({
+	  		"background-color":"#f6cc21",
+	  		"z-index": "13"
+	  	});	
 	});
+	
 
 /**************** Left-scroll ****************/
 
@@ -150,6 +138,8 @@ var main = function() {
 $(window).load(function() {
 	if ($('#carousel').width() > 1000) {
 		var countItem = 6;
+	} else if ($('#carousel').width() > 768) {
+		var countItem = 5;
 	} else {
 		var countItem = 3;
 	}
