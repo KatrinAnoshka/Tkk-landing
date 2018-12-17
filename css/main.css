@@ -288,7 +288,7 @@ h3.conversion__subtitle--res {
     position: absolute;
     left: -44px;
     padding-bottom: 40px;
-    padding-top: 14px;
+    padding-top: 15px;
 }
 .ui-slider-horizontal .ui-slider-range-max {
     background-color: #7bc6db;
@@ -390,7 +390,7 @@ h3.conversion__subtitle--res {
 /*******------------Projects-section------------******/
 
 .projects {
-    height: 880px;
+    height: 830px;
     padding: 0 20px;
 }
 .project__comp {
@@ -401,22 +401,37 @@ h3.conversion__subtitle--res {
     height: auto;
 }
 .project__slider {
-    max-width: 719px;
+    /*max-width: 719px;
     width: 100%;
     height: auto;
     margin: 0 auto;
-    background: none;
+    background: none;*/
     border: none;
-    bottom: 764px;
-    left: 1px;
-}
-.project__slider .slides > li img {
+    /*bottom: 764px;*/
+    /*left: 1px;*/
+    background: url(../img/comp.png) center center no-repeat;
+    background-size: contain;
     width: 719px;
-    height: 407px;
+    max-width: 100%;
+    height: 728px;
     margin: 0 auto;
 }
+.project__slider .slides > li img {
+    width: 663px;
+    height: 377px;
+    margin: 0px auto;
+    padding-top: 26px;
+}
+/*.project__item {
+    background: url(../img/comp.png) center center no-repeat;
+    background-size: cover;
+    width: 719px;
+    max-width: 100%;
+    height: 728px;
+    margin: 0 auto;
+}*/
 .projects__thumb {
-    bottom: 625px;
+    bottom: 196px;
     width: 1045px;
     max-width: 100%;
     margin: 0 auto;
@@ -456,7 +471,7 @@ h3.conversion__subtitle--res {
 .project__button {
     position: relative;
     width: 415px;
-    bottom: 625px;
+    bottom: 196px;
     margin: 48px auto 0;
     padding: 20px 0px;
 }
@@ -472,6 +487,8 @@ h3.conversion__subtitle--res {
 .carousel__item:hover {
     border: 3px solid rgb(252, 204, 34);
 }
+
+/*ООООО*/
 
 /*********---------------Price-section---------------*******/
 

@@ -95,7 +95,10 @@
 }
 
 @media only screen and (max-width : 840px) {	
-	
+	/*Project-section*/
+	.project__overlay {
+		display: none;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -225,7 +228,36 @@
 	.conversion__block {
 		padding-bottom: 20px;
 	}
+
+	/*Project-section*/
 	
+	/*.project__slider .slides > li img {
+		    width: 454px;
+    height: 258px;
+    padding-top: 133px;
+	}*/
+	.projects {
+    height: 690px;
+    
+}
+	.project__slider {
+		width: 450px;
+		height: 466px;
+	}
+	.project__slider .slides > li img {
+    width: 417px;
+    height: 236px;
+    margin: 0 auto;
+    padding-top: 21px;
+}
+.projects__thumb,
+.project__button {
+	bottom: 108px;
+}
+/*.project__overlay {
+	background: radial-gradient(circle, #000 0%, transparent 41%);
+    top: -82px;
+}*/
 	/*Price-section*/
 
 	a.price__item {
@@ -358,6 +390,29 @@
 		margin-top: 60px;
     	margin-bottom: 35px;
     	padding: 0 10px;
+	}
+	/*Project-section*/
+.projects {
+    height: 515px;
+}
+.project__slider {
+	width: 280px;
+	height: 300px;
+}
+	.project__slider .slides > li img {
+    width: 258px;
+    height: 149px;
+    margin: 0 auto;
+    padding-top: 17px;
+}
+.projects__thumb,
+.project__button {
+    bottom: 11px;
+}
+	.project__button {
+		padding: 20px;
+		width: 250px;
+		/*margin-top: 24px;*/
 	}
 	
 	/*Price-section*/
