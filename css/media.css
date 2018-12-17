@@ -18,7 +18,7 @@
 	/********About-section********/
 	
 	section.about {
-		margin-top: 50px;
+		padding-top: 50px;
 	}
 	.about__img {
 	    width: 600px;
