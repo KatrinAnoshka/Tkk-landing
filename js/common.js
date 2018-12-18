@@ -1,35 +1,23 @@
 $(document).ready(function() {
 
-	/* Adaptive menu !!!!!!!!!!!!!!!!!*/
-   
- //    $(".menu__icon").click(function() {
-	// 	$(this).toggleClass("on");
-	// 	$(".menu").slideToggle();
-	// 	$('.our-contacts').toggleClass('hidden-div')
-	// 	return false;
-	// });
-   	
-   	/* Открытие меню */
+/*********** Adaptive menu ***********/
 
-var main = function() { 
-
-    $('.menu__icon').click(function() {            
-        $('.menu').animate({ 
-            left: '0px' 
-        }, 200);        
-        $('body').animate({ 
-            left: '285px' 
-        }, 200);
-    });
-
-
-    $('.menu__close').click(function() { 
-        $('.menu').animate({ 
-            left: '-285px' 
-        }, 200);        
-	    $('body').animate({ 
+	var main = function() { 
+	    $('.menu__icon').click(function() {            
+	        $('.menu').animate({ 
 	            left: '0px' 
-	        }, 200); 
+	        }, 200);        
+	        $('body').animate({ 
+	            left: '285px' 
+	        }, 200);
+	    });
+	    $('.menu__close').click(function() { 
+	        $('.menu').animate({ 
+	            left: '-285px' 
+	        }, 200);        
+		    $('body').animate({ 
+		        left: '0px' 
+		    }, 200); 
 	    });
 	};
 	$(document).ready(main);
@@ -64,18 +52,15 @@ var main = function() {
 		$(window).scroll(function () {
 			var scrolled = $(window).scrollTop();
 			if (scrolled >= 5) {
-				$('header').addClass('header__fixed');				
-				// $('.about').addClass('about__fixed');				
+				$('header').addClass('header__fixed');						
 			}
 			else {
 				if (scrolled < 180) {
-					$('header').removeClass('header__fixed');					
-					// $('.about').removeClass('about__fixed');					
+					$('header').removeClass('header__fixed');									
 				}
 			}
 		});
 	}
-
 	
 /*************** Price-section ***************/
 
@@ -87,7 +72,7 @@ var main = function() {
 	  	});	
 	});
 	
-	/* Pop-Up forms */
+/************** Pop-Up forms **************/
 
 	$(".offer__button, .button__about").click(function() {
 		$("#form_back input[name=formname]").val($(this).text());
@@ -96,7 +81,6 @@ var main = function() {
 		mainClass: 'mfp-forms'
 	});
 
-	
 /**************** Left-scroll ****************/
 
 	$(window).scroll(function(event){
@@ -140,7 +124,7 @@ var main = function() {
 		});
 	}
 
-// Animated
+/***************** Animated *****************/
 	new WOW().init();
 
 });	

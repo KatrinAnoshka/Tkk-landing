@@ -2,18 +2,22 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1400px) {	
+
 	/********Left-scroll********/
 	.scroll {
 		display: none;
 	}
 }
 @media only screen and (max-width : 1200px) {
+
+	/**********Header-section**********/
+
 	.header__fixed .logo {
-    padding-left: 30px;
-}
-.header__fixed .phone__wrap {
-    padding-right: 30px;
-}
+	    padding-left: 30px;
+	}
+	.header__fixed .phone__wrap {
+	    padding-right: 30px;
+	}
 	
 	/********About-section********/
 	
@@ -23,15 +27,14 @@
 	.about__img {
 	    width: 600px;
 	}
+
 	/*******Conversion-section*******/
 	
 	section.conversion {
 		padding: 0;
 	}
 	.conversion__wrap {
-		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
-		-ms-flex-direction: column;
 		-o-flex-direction: column;
 		flex-direction: column;
 		-ms-align-items: center;
@@ -46,11 +49,7 @@
 		position: static;
 	}
 
-	
-
-	
-
-	/*Offer-section*/
+	/**********Offer-section**********/
 
 	.offer__logo {
 		width: 500px;
@@ -74,7 +73,7 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
-	/*About-section*/
+	/*********About-section*********/
 
 	.about__wrap {
 		flex-direction: column;
@@ -96,12 +95,13 @@
 
 	.bar__container {
 		width: 85%;
-	}
-	
+	}	
 }
 
 @media only screen and (max-width : 840px) {	
-	/*Project-section*/
+
+	/***********Project-section***********/
+
 	.project__overlay {
 		display: none;
 	}
@@ -110,8 +110,7 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	
-
-	/*Header-section*/
+	/************Header-section************/
 
 	.header {
 		padding: 20px 0 0;
@@ -126,8 +125,7 @@
 		display: none;
 	}
 
-
-	/*Adaptive-menu*/
+	/***********Adaptive-menu***********/
 
 	.menu__icon {
 		display: block;
@@ -181,12 +179,10 @@
 	}
 	.menu__close span:nth-child(2) {
 	    -webkit-transform: rotate(45deg);
-	        -ms-transform: rotate(45deg);
 	            transform: rotate(45deg);
 	}
 	.menu__close span:nth-child(3) {
 	    -webkit-transform: rotate(-45deg);
-	        -ms-transform: rotate(-45deg);
 	            transform: rotate(-45deg);
 	}
 	.menu__close span:nth-child(4) {
@@ -195,13 +191,8 @@
 	    left: 50%;
 	}
 	.menu__links {
-	    -webkit-box-orient: vertical;
-	    -webkit-box-direction: normal;
-	    -ms-flex-direction: column;
 	    flex-direction: column;
-	    -webkit-box-align: center;
-	        -ms-flex-align: center;
-	            align-items: center;
+	    align-items: center;
 	    line-height: 34px;
 	    padding-bottom: 10px;
 	    padding-left: 0;	    
@@ -224,7 +215,7 @@
 		opacity: 0;		
 	}
 	
-	/*Conversion-section*/
+	/***********Conversion-section***********/
 
 	.range__item {
 		padding-right: 0;
@@ -236,36 +227,27 @@
 		padding-bottom: 20px;
 	}
 
-	/*Project-section*/
-	
-	/*.project__slider .slides > li img {
-		    width: 454px;
-    height: 258px;
-    padding-top: 133px;
-	}*/
+	/***********Project-section***********/
+
 	.projects {
-    height: 690px;
-    
-}
+	    height: 690px;  
+	}
 	.project__slider {
 		width: 450px;
 		height: 466px;
 	}
 	.project__slider .slides > li img {
-    width: 417px;
-    height: 236px;
-    margin: 0 auto;
-    padding-top: 21px;
-}
-.projects__thumb,
-.project__button {
-	bottom: 108px;
-}
-/*.project__overlay {
-	background: radial-gradient(circle, #000 0%, transparent 41%);
-    top: -82px;
-}*/
-	/*Price-section*/
+	    width: 417px;
+	    height: 236px;
+	    margin: 0 auto;
+	    padding-top: 21px;
+	}
+	.projects__thumb,
+	.project__button {
+		bottom: 108px;
+	}
+
+	/**********Price-section**********/
 
 	a.price__item {
 		width: 35%;
@@ -279,7 +261,6 @@
 	.bar {
 		   border: 2px solid #fff;
 	}
-	
 	.bar__circle {
 		width: 20px;
 		height: 20px;
@@ -298,21 +279,20 @@
 		left: 98%;
 	}
 
-	/*Time-section*/
+	/************Time-section************/
 
 	.time__wrap {
-		grid-template-columns: 130px repeat(21, 1fr);
+		-ms-grid-columns: 130px (1fr)[21];
+		    grid-template-columns: 130px repeat(21, 1fr);
 	}
 	.time__item--title {
 		padding: 10px;
 	}
 	
-	/*Offer-section*/
+	/*********Offer-section*********/
 
 	.offer__wrap {
-		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
-		-ms-flex-direction: column;
 		-o-flex-direction: column;
 		flex-direction: column;
 	}	
@@ -330,7 +310,7 @@
 		text-align: center;
 	}
 	
-	/*Contacts-section*/
+	/**********Contacts-section**********/
 
 	.contacts__item {
 		width: 75%;
@@ -339,16 +319,16 @@
 	.contacts__title {
 		margin-top: 75px;
 	}
-
 }
 @media only screen and (max-width : 650px) {
 	
-	/*Time-section*/
+	/************Time-section************/
 	
 	.time__wrap {
 		display: none;
 	}
 	.time__wrap--mobile {
+		display: -ms-grid;
 		display: grid;
 	}
 	.time__container {
@@ -358,7 +338,6 @@
 		font-size: 0.7em;
 		padding: 3px;
 		text-align: center;
-		/*vertical-align: middle;*/
 	}
 	.time__wrap--mobile .time__item--inner {
 		margin-top: 4px;
@@ -385,44 +364,44 @@
 		padding: 0 10px;
 	}
 
-	/*About-section*/
+	/***********About-section***********/
 	
 	.button__descr {
 		padding: 20px 80px;
 	}
 
-	/*Conversion-section*/
+	/*************Conversion-section*************/
 
 	h2.section__title {
 		margin-top: 60px;
     	margin-bottom: 35px;
     	padding: 0 10px;
 	}
-	/*Project-section*/
-.projects {
-    height: 515px;
-}
-.project__slider {
-	width: 280px;
-	height: 300px;
-}
+
+	/***********Project-section***********/
+	.projects {
+	    height: 515px;
+	}
+	.project__slider {
+		width: 280px;
+		height: 300px;
+	}
 	.project__slider .slides > li img {
-    width: 258px;
-    height: 149px;
-    margin: 0 auto;
-    padding-top: 17px;
-}
-.projects__thumb,
-.project__button {
-    bottom: 11px;
-}
+	    width: 258px;
+	    height: 149px;
+	    margin: 0 auto;
+	    padding-top: 17px;
+	}
+	.projects__thumb,
+	.project__button {
+	    bottom: 11px;
+	}
 	.project__button {
 		padding: 20px;
 		width: 250px;
-		/*margin-top: 24px;*/
 	}
 	
-	/*Price-section*/
+	/***********Price-section***********/
 	
 	.price__items {
 		margin-top: 20px;
@@ -441,13 +420,14 @@
 	    padding-right: 8px;
 	}
 
-	/*Time-section*/
+	/*********Time-section*********/
 
 	.time__title {
 		margin-top: 90px !important;
 	}
 
-	/*Offer-section*/
+	/************Offer-section************/
+
 	.offer {
 		margin-top: 60px;
 	}
@@ -457,17 +437,19 @@
 	.offer__button {
 		padding: 20px 0 !important;
 	}
-	/*Contacts-section*/
+
+	/***********Contacts-section***********/
 
 	.contacts__wrap :nth-child(1) {
 		margin-top: 0;
 	}
-	
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 400px) {
-	/*Header-menu*/
+
+	/*********Header-menu*********/
+
 	.phone__wrap {
 		position: absolute;
     	top: 56px;
@@ -494,9 +476,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-	.menu {
-        display:block!important
-    }
+	
 }
 
 /* Large Devices, Wide Screens */

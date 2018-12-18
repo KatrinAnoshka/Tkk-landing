@@ -46,7 +46,6 @@ h2.section__title {
 
 .header {
     padding: 10px 20px;
-
 }
 .header__wrap {
     max-width: 1200px;
@@ -60,8 +59,7 @@ h2.section__title {
     display: flex;
     -ms-align-items: center;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
     position: relative;
 }
 .header__fixed {
@@ -74,7 +72,6 @@ h2.section__title {
     max-width: 1880px;
     z-index: 1000;
     transition: all .5s ease-in-out;
-
 }
 .logo {
     display: -webkit-flex;
@@ -87,7 +84,6 @@ h2.section__title {
     text-decoration: none;
     padding-left: 10px;
 }
-
 .logo__text {
     font-size: 0.8em;
     line-height: 1.2;
@@ -180,11 +176,7 @@ section.about {
     height: auto;
     margin: 0 auto;
     padding-top: 120px;
-    /*transition: all .3s ease-out;*/
 }
-/*section.about.about__fixed {
-    margin-top: 0;
-}*/
 .about__wrap {
     display: -webkit-flex;
     display: -moz-flex;
@@ -406,14 +398,7 @@ h3.conversion__subtitle--res {
     height: auto;
 }
 .project__slider {
-    /*max-width: 719px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    background: none;*/
     border: none;
-    /*bottom: 764px;*/
-    /*left: 1px;*/
     background: url(../img/comp.png) center center no-repeat;
     background-size: contain;
     width: 719px;
@@ -427,14 +412,6 @@ h3.conversion__subtitle--res {
     margin: 0px auto;
     padding-top: 26px;
 }
-/*.project__item {
-    background: url(../img/comp.png) center center no-repeat;
-    background-size: cover;
-    width: 719px;
-    max-width: 100%;
-    height: 728px;
-    margin: 0 auto;
-}*/
 .projects__thumb {
     bottom: 196px;
     width: 1045px;
@@ -443,18 +420,6 @@ h3.conversion__subtitle--res {
     background: none;
     border: none;
 }
-/*.projects__thumb .slides > li {
-    width: 135px !important;
-    height: 100px !important;
-    margin-right: 47px !important;
-}*/
-/*.projects__thumb .slides > li img {
-    width: 129px;
-    height: 94px;
-    border: 3px solid transparent;
-    cursor: pointer;
-}*/
-
 .project__overlay {
     background: radial-gradient(circle, #000 0%, transparent 47%);
     opacity: 0.8;
@@ -467,9 +432,6 @@ h3.conversion__subtitle--res {
     height: 181px;
     z-index: 0;
 }
-/*.project__phone {
-    width: 150px;
-}*/
 .flex-direction-nav {
     display: none;
 }
@@ -493,8 +455,6 @@ h3.conversion__subtitle--res {
     border: 3px solid rgb(252, 204, 34);
 }
 
-/*ООООО*/
-
 /*********---------------Price-section---------------*******/
 
 .price {
@@ -503,7 +463,6 @@ h3.conversion__subtitle--res {
     height: auto;
     margin: 0 auto;
 }
-
 .price__wrap {
     padding: 0 20px;
 }
@@ -511,19 +470,15 @@ h3.conversion__subtitle--res {
 /*Price-progress*/
 
 .bar__container {
-    /*padding: 0 20px;*/
     width: 1040px;
     max-width: 100%;
     margin: 0 auto;
 }
 .bar {
-    /*width: 1040px;
-    max-width: 100%;*/
     height: 17px;
     background-color: rgb(51, 134, 47);
     border: 3px solid #fff;
     position: relative;
-    /*margin: 0 auto;*/
     padding: 0 20px;
 }
 .bar__circle {
@@ -571,7 +526,6 @@ h3.conversion__subtitle--res {
 .bar__circle--edge {
     width: 43px;
     height: 43px;
-    /*background-color: #f6cc21;*/
     top: -93%;
 }
 .bar__progress,
@@ -579,8 +533,6 @@ h3.conversion__subtitle--res {
     width: 1040px;
     max-width: 100%;
     height: 17px;
-    
-    /*border: 3px solid #fff;*/
     position: absolute;
     margin: 0 auto;
     top: 0;
@@ -594,14 +546,12 @@ h3.conversion__subtitle--res {
 .bar__progress--active{
     background-color: #f6cc21;
     z-index: 13;
-    width: 2.5%;
+    width: 1.5%;
 }
 
 /*Step-section*/
 
 .price__step {
-    /*max-width: 1040px;
-    width: 100%;*/
     height: auto;
     margin: 51px auto 0;
     padding: 0 20px;
@@ -721,8 +671,6 @@ a.price__button:hover {
     padding: 0 20px;
 }
 .time__wrap {
-    /*width: 1080px;
-    max-width: 100%;*/
     height: auto;
     border-radius: 25px;
     border: 10px solid rgb(255, 255, 255);
@@ -826,7 +774,6 @@ a.price__button:hover {
     border-top-right-radius: 100px 80px;
 }
 
-
 /*********-----------Offer-section-----------*********/
 
 .offer {
@@ -837,7 +784,6 @@ a.price__button:hover {
     max-width: 1100px;
     width: 100%;
     height: auto;
-    /*padding: 0 20px;*/
     margin: 0 auto;
     display: -webkit-flex;
     display: -moz-flex;
@@ -1011,7 +957,6 @@ a.price__button:hover {
     max-width: 1100px;
     width: 100%;
     height: auto;
-    /*padding: 0 20px;*/
     margin: 0 auto;
     display: flex;
     -webkit-flex-wrap: wrap;
