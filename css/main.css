@@ -799,7 +799,9 @@ a.price__button:hover {
 
 /*Animation-triangle*/
 
-#triangle-first {
+#triangle__first {
+    -webkit-filter:url(#blur-effect-1);
+            filter:url(#blur-effect-1); 
     -webkit-animation-name: move1;
             animation-name: move1;
     -webkit-animation-duration: 4s;
@@ -808,8 +810,6 @@ a.price__button:hover {
             animation-iteration-count: infinite;
     top: 0;
     left: -310px;
-    width: 260px;
-    height: auto;
     position: absolute;
 }
 @-webkit-keyframes move1 {
@@ -836,7 +836,33 @@ a.price__button:hover {
                 transform: rotate(360deg);
     }
 }
-#triangle-second {
+svg #triangle__first--pol {
+    -webkit-animation-name: move11;
+            animation-name: move11;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+@-webkit-keyframes move11 {
+    50% {
+        fill: #33862f;
+    }
+    100% {
+        fill: rgb(252, 204, 34);
+    }
+}
+@keyframes move11 {
+    50% {
+        fill: #33862f;
+    }
+    100% {
+        fill: rgb(252, 204, 34);
+    }
+}
+#triangle__second {
+    -webkit-filter:url(#blur-effect-2);
+            filter:url(#blur-effect-2);
     -webkit-animation-name: move2;
             animation-name: move2;
     -webkit-animation-duration: 3s;
@@ -845,8 +871,6 @@ a.price__button:hover {
             animation-iteration-count: infinite;
     top: -23%;
     right: 55%;
-    width: 150px;
-    height: auto;
     position: absolute;
 }
 @-webkit-keyframes move2 {
@@ -873,7 +897,31 @@ a.price__button:hover {
                 transform: rotate(360deg);
     }
 }
-#triangle-third {
+svg #triangle__second--pol {
+    -webkit-animation-name: move22;
+            animation-name: move22;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+@-webkit-keyframes move22 {
+    50% {
+        fill: #33862f;
+    }
+    100% {
+        fill: #385598;
+    }
+}
+@keyframes move22 {
+    50% {
+        fill: #33862f;
+    }
+    100% {
+        fill: #385598;
+    }
+}
+#triangle__third {
     -webkit-animation-name: move3;
             animation-name: move3;
     -webkit-animation-duration: 5s;
@@ -882,10 +930,10 @@ a.price__button:hover {
             animation-iteration-count: infinite;
     top: 46%;
     right: 107%;
-    width: 160px;
-    height: auto;
     position: absolute;
     opacity: 1;
+    -webkit-filter:url(#blur-effect-3);
+            filter:url(#blur-effect-3);
 }
 @-webkit-keyframes move3 {
     50%  {
@@ -903,6 +951,7 @@ a.price__button:hover {
     }
     53% { 
         opacity: 1; 
+        
     }
     100% {
         -webkit-transform: rotate(360deg);
@@ -925,29 +974,54 @@ a.price__button:hover {
     }
     53% { 
         opacity: 1; 
+        
     }
     100% {
         -webkit-transform: rotate(360deg);
                 transform: rotate(360deg);
     }
 }
-#triangle-fourth {
-    -webkit-animation-name: move4;
-            animation-name: move4;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+svg #triangle__third--pol {
+    -webkit-animation-name: move33;
+            animation-name: move33;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    top: 92%;
-    left: 89%;
-    width: 50px;
-    height: auto;
+}
+@-webkit-keyframes move33 {
+    50% {
+        fill: #f6cc21;
+    }
+    100% {
+        fill: #522d60;
+    }
+}
+@keyframes move33 {
+    50% {
+        fill: #f6cc21;
+    }
+    100% {
+        fill: #522d60;
+    }
+}
+#triangle__fourth {
+    -webkit-filter:url(#blur-effect-4);
+            filter:url(#blur-effect-4); 
+    -webkit-animation-name: move4;
+            animation-name: move4;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    top: 87%;
+    left: 79%;
     position: absolute;
 }
 @-webkit-keyframes move4 {
     50%  {
         top: 85%;
-        left: 55%;   
+        left: 35%;   
         -webkit-transform: rotate(180deg);   
                 transform: rotate(180deg);
     }
@@ -959,7 +1033,7 @@ a.price__button:hover {
 @keyframes move4 {
     50%  {
         top: 85%;
-        left: 55%;   
+        left: 35%;   
         -webkit-transform: rotate(180deg);   
                 transform: rotate(180deg);
     }
@@ -968,17 +1042,39 @@ a.price__button:hover {
                 transform: rotate(360deg);
     }
 }
-#triangle-fifth {
+svg #triangle__fourth--pol {
+    -webkit-animation-name: move44;
+            animation-name: move44;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+@-webkit-keyframes move44 {
+    50% {
+        fill: #f6cc21;
+    }
+    100% {
+        fill: #43ac51;
+    }
+}
+@keyframes move44 {
+    50% {
+        fill: #f6cc21;
+    }
+    100% {
+        fill: #43ac51;
+    }
+}
+#triangle__fifth {
     -webkit-animation-name: move5;
             animation-name: move5;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
     top: 4%;
     left: 87%;
-    width: 100px;
-    height: auto;
     position: absolute; 
     opacity: 1; 
 }
@@ -1022,6 +1118,30 @@ a.price__button:hover {
     100% {
         -webkit-transform: rotate(360deg);
                 transform: rotate(360deg);
+    }
+}
+svg #triangle__fifth--pol {
+    -webkit-animation-name: move55;
+            animation-name: move55;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+@-webkit-keyframes move55 {
+    50% {
+        fill: #f6cc21;
+    }
+    100% {
+        fill: #43ac51;
+    }
+}
+@keyframes move55 {
+    50% {
+        fill: #f6cc21;
+    }
+    100% {
+        fill: #43ac51;
     }
 }
 

@@ -639,11 +639,43 @@
 					<a href="#form_back" class="button button__descr offer__button">Узнать подробнее</a>
 				</div>
 				<div class="offer__img">
-					<img id="triangle-first" src="img/offer/triangle-1.png" alt="Желтый треугольник">
-					<img id="triangle-second" src="img/offer/triangle-2.png" alt="Желтый треугольник">
-					<img id="triangle-third" src="img/offer/triangle-3.png" alt="Желтый треугольник">
-					<img id="triangle-fourth" src="img/offer/triangle-4.png" alt="Желтый треугольник">
-					<img id="triangle-fifth" src="img/offer/triangle-5.png" alt="Желтый треугольник">
+
+				<!-- First-triangle -->
+					<svg id="triangle__first" width="230" height="140">
+			    		<polygon id="triangle__first--pol" points="5,135 115,5 185,135" fill="rgb(252, 204, 34)" />
+						<filter id="blur-effect-1">
+					        <feGaussianBlur stdDeviation="2" />
+					    </filter>
+					</svg>
+				
+				<!-- Second-triangle -->
+					<svg id="triangle__second" width="230" height="140">
+			    		<polygon id="triangle__second--pol" points="5,135 75,25 95,135" fill="#385598" />
+						<filter id="blur-effect-2">
+					        <feGaussianBlur stdDeviation="4" />
+					    </filter>
+					</svg>
+
+				<!-- Third-triangle -->
+					<svg id="triangle__third" width="230" height="140">
+			    		<polygon id="triangle__third--pol" points="5,135 75,30 125,135" fill="#522d60" />
+						<filter id="blur-effect-3">
+					        <feGaussianBlur stdDeviation="1" />
+					    </filter>
+					</svg>	
+
+				<!-- Fourth-triangle -->
+					<svg id="triangle__fourth" width="140" height="140">
+			    		<polygon id="triangle__fourth--pol" points="5,135 55,55 85,140" fill="#40a54f" />
+						<filter id="blur-effect-4">
+					        <feGaussianBlur stdDeviation="6" />
+					    </filter>
+					</svg>	
+				
+				<!-- Fifth-triangle -->
+					<svg id="triangle__fifth" width="140" height="140">
+			    		<polygon id="triangle__fifth--pol" points="5,135 55,55 85,140" fill="#522d60" />
+					</svg>		
 
 					<img id="offer__logo" src="img/offer/offer-img.png" alt="Openning soon">
 				</div>
