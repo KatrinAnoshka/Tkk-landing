@@ -19,8 +19,6 @@ a.button {
     cursor: pointer;
     text-decoration: none;
     text-align: center;
-    -webkit-transition: color 0.5s ease-out,background 0.5s ease-out;
-    -o-transition: color 0.5s ease-out,background 0.5s ease-out;
     transition: color 0.5s ease-out,background 0.5s ease-out;
 }
 .page {
@@ -52,7 +50,6 @@ h2.section__title {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -66,7 +63,8 @@ h2.section__title {
     position: fixed;
     top: 0;
     left: 50%;
-    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
     background: linear-gradient(to top, rgba(20, 47, 74, 0.81), #132e49);
     width: 100%;
     max-width: 1880px;
@@ -74,7 +72,6 @@ h2.section__title {
     transition: all .5s ease-in-out;
 }
 .logo {
-    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -94,15 +91,8 @@ h2.section__title {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-left: 30px;
@@ -118,8 +108,6 @@ h2.section__title {
 .menu__links-item a {
     color: #fff;
     text-decoration: none;
-    -webkit-transition: color 0.5s ease;
-    -o-transition: color 0.5s ease;
     transition: color 0.5s ease;
 }
 .menu__links-item a:hover, 
@@ -140,8 +128,6 @@ a.phone {
     color: rgb(255, 255, 255);
     line-height: 1.728;
     text-decoration: none;
-    -webkit-transition: color 0.5s ease;
-    -o-transition: color 0.5s ease;
     transition: color 0.5s ease;
     cursor: pointer;
 }
@@ -178,7 +164,6 @@ section.about {
     padding-top: 120px;
 }
 .about__wrap {
-    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -189,14 +174,11 @@ section.about {
     padding: 0 20px;
 }
 .about__description {
-    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    -webkit-flex-direction: column;
     -moz-flex-direction: column;
-    -ms-flex-direction: column;
     -o-flex-direction: column;
     flex-direction: column;
     -ms-align-items: flex-start;
@@ -230,7 +212,6 @@ h1.about__title {
     margin-top: 45px;
 }
 a.button__descr:hover {
-    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
@@ -244,7 +225,6 @@ section.conversion {
     padding: 0 20px;  
 }
 .conversion__wrap {
-    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -332,14 +312,11 @@ h3.conversion__subtitle--res {
     outline: none;
 }
 .range__wrap {
-    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    -webkit-flex-direction: column;
     -moz-flex-direction: column;
-    -ms-flex-direction: column;
     -o-flex-direction: column;
     flex-direction: column;
     justify-content: space-between;
@@ -349,7 +326,6 @@ h3.conversion__subtitle--res {
     padding-right: 70px;
 }
 .range__item {
-    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -425,7 +401,8 @@ h3.conversion__subtitle--res {
     opacity: 0.8;
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
     top: -33px;
     width: 780px;
     max-width: 100%;
@@ -562,14 +539,10 @@ h3.conversion__subtitle--res {
     position: relative;
 }
 .price__items {
-    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -592,8 +565,6 @@ a.price__item {
     text-align: center;
 }
 .price__img {
-    -webkit-transition: background 0.5s ease-out;
-    -o-transition: background 0.5s ease-out;
     transition: background 0.5s ease-out;
 }
 .price__img--apply {
@@ -617,8 +588,6 @@ a.price__item {
 .price__text {
     font: 1.25em/0.667 "FuturaMediumC";
     color: rgb(72, 77, 83);
-    -webkit-transition: color 0.5s ease-out;
-    -o-transition: color 0.5s ease-out;
     transition: color 0.5s ease-out;
 }
 a.price__item:hover .price__img--apply {
@@ -654,7 +623,8 @@ a.price__button {
     position: absolute;
     top: 96%;
     left: 50%;
-    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
 }
 a.price__button:hover {
     box-shadow: none;
@@ -680,7 +650,8 @@ a.price__button:hover {
     overflow: hidden;
     display: -ms-grid;
     display: grid;
-    grid-template-columns: 188px repeat(21, 1fr);
+    -ms-grid-columns: 188px (1fr)[21];
+        grid-template-columns: 188px repeat(21, 1fr);
     margin: 0 auto;
     position: relative;
     z-index: 8;
@@ -718,7 +689,8 @@ a.price__button:hover {
     top: 50%;
     margin-left: 10px;
     margin-right: 10px;
-    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
     left: 0;
     background-color: #a0b8e3;
     z-index: 25;
@@ -744,7 +716,8 @@ a.price__button:hover {
     margin: 0 auto;
     position: relative;
     z-index: 8;
-    grid-template-columns: 30px repeat(6, 1fr);
+    -ms-grid-columns: 30px (1fr)[6];
+        grid-template-columns: 30px repeat(6, 1fr);
     border-top: 24px solid rgb(255, 255, 255);
 }
 .time__wrap--mobile .time__item--title {
@@ -763,7 +736,8 @@ a.price__button:hover {
     position: absolute;
     content: '';
     top: 28%;
-    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
     left: 37%;
     background-color: #a0b8e3;
     z-index: 25;
@@ -785,7 +759,6 @@ a.price__button:hover {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -827,49 +800,86 @@ a.price__button:hover {
 /*Animation-triangle*/
 
 #triangle-first {
-    animation-name: move1;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: move1;
+            animation-name: move1;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     top: 0;
     left: -310px;
     width: 260px;
     height: auto;
     position: absolute;
 }
+@-webkit-keyframes move1 {
+    50% {
+        top: 50px;
+        left: -610px;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
 @keyframes move1 {
     50% {
         top: 50px;
         left: -610px;
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
     }
     100% {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
 }
 #triangle-second {
-    animation-name: move2;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: move2;
+            animation-name: move2;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     top: -23%;
     right: 55%;
     width: 150px;
     height: auto;
     position: absolute;
 }
+@-webkit-keyframes move2 {
+    50% {
+        right: 15%;
+        top: -20%;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);      
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
 @keyframes move2 {
     50% {
         right: 15%;
         top: -20%;
-        transform: rotate(180deg);      
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);      
     }
     100% {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
 }
 #triangle-third {
-    animation-name: move3;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: move3;
+            animation-name: move3;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     top: 46%;
     right: 107%;
     width: 160px;
@@ -877,11 +887,12 @@ a.price__button:hover {
     position: absolute;
     opacity: 1;
 }
-@keyframes move3 {
+@-webkit-keyframes move3 {
     50%  {
         top: 80%;
         right: 80%;
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
     }
     50.001% { 
         opacity: 0.4; 
@@ -894,33 +905,76 @@ a.price__button:hover {
         opacity: 1; 
     }
     100% {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@keyframes move3 {
+    50%  {
+        top: 80%;
+        right: 80%;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+    50.001% { 
+        opacity: 0.4; 
+    }
+
+    52.999% { 
+        opacity: 0.4; 
+    }
+    53% { 
+        opacity: 1; 
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
 }
 #triangle-fourth {
-    animation-name: move4;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: move4;
+            animation-name: move4;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     top: 92%;
     left: 89%;
     width: 50px;
     height: auto;
     position: absolute;
 }
+@-webkit-keyframes move4 {
+    50%  {
+        top: 85%;
+        left: 55%;   
+        -webkit-transform: rotate(180deg);   
+                transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
 @keyframes move4 {
     50%  {
         top: 85%;
         left: 55%;   
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);   
+                transform: rotate(180deg);
     }
     100% {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
 }
 #triangle-fifth {
-    animation-name: move5;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: move5;
+            animation-name: move5;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     top: 4%;
     left: 87%;
     width: 100px;
@@ -928,11 +982,12 @@ a.price__button:hover {
     position: absolute; 
     opacity: 1; 
 }
-@keyframes move5 {
+@-webkit-keyframes move5 {
     50%  {
         top: 54%;
         left: 85%;
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
     }
     50.001% { 
         opacity: 0.4; 
@@ -944,7 +999,29 @@ a.price__button:hover {
         opacity: 1; 
     }
     100% {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@keyframes move5 {
+    50%  {
+        top: 54%;
+        left: 85%;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+    50.001% { 
+        opacity: 0.4; 
+    }
+    52.999% { 
+        opacity: 0.4; 
+    } 
+    53% { 
+        opacity: 1; 
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
 }
 
@@ -959,9 +1036,6 @@ a.price__button:hover {
     height: auto;
     margin: 0 auto;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -983,16 +1057,12 @@ a.price__button:hover {
     text-decoration: none;
 }
 .contacts__descr a {
-    -webkit-transition: color 0.5s ease-out;
-    -o-transition: color 0.5s ease-out;
     transition: color 0.5s ease-out;
 }
 .contacts__descr {
     font-size: 1.25em;
     display: flex;
-    -webkit-flex-direction: column;
     -moz-flex-direction: column;
-    -ms-flex-direction: column;
     -o-flex-direction: column;
     flex-direction: column;
 }
@@ -1086,8 +1156,7 @@ a.price__button:hover {
     line-height: 40px;
     height: 40px;
     border: #D9D9D9 1px solid;
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.06) inset;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.06) inset;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.06) inset;
     width: 100%;
     text-indent: 10px;
     font-size: 20px;
@@ -1103,8 +1172,6 @@ a.price__button:hover {
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-    -webkit-transition: color 0.2s ease-out,opacity 0.2s ease-out,background 0.2s ease-out;
-    -o-transition: color 0.2s ease-out,opacity 0.2s ease-out,background 0.2s ease-out;
     transition: color 0.2s ease-out,opacity 0.2s ease-out,background 0.2s ease-out;
     width: 200px;
     height: 40px;
